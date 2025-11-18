@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:org="http://www.w3.org/ns/org#"
+    xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+    xmlns:chi="http://example.org/chi2025#">
+
+  <owl:Ontology rdf:about="http://example.org/chi/instances"/>
+
+  <!-- =========================
+       PAPER 1
+       ========================= -->
+  <chi:Paper rdf:about="http://example.org/chi2025#paper-1">
+    <rdfs:label>Like Adding a Small Weight to a Scale About to Tip: Personalizing Micro-Financial Incentives for Digital Wellbeing</rdfs:label>
+    <dct:title>Like Adding a Small Weight to a Scale About to Tip: Personalizing Micro-Financial Incentives for Digital Wellbeing</dct:title>
+    <dct:abstract>Personalized behavior change interventions can be effective ... benefits and limitations concerning motivation change.</dct:abstract>
+
+    <!-- Paper ↔ Study -->
+    <chi:paperIncludesStudy rdf:resource="http://example.org/chi2025#paper-1-study-1"/>
+
+    <!-- Paper ↔ Authorship(×4) -->
+    <chi:hasAuthorship rdf:resource="http://example.org/chi2025#auth-p1-a1"/>
+    <chi:hasAuthorship rdf:resource="http://example.org/chi2025#auth-p1-a2"/>
+    <chi:hasAuthorship rdf:resource="http://example.org/chi2025#auth-p1-a3"/>
+    <chi:hasAuthorship rdf:resource="http://example.org/chi2025#auth-p1-a4"/>
+  </chi:Paper>
+
+  <!-- P1 Study: Study 레벨에서 Measure/Instrument/Result 연결 -->
+  <chi:FieldStudy rdf:about="http://example.org/chi2025#paper-1-study-1">
+    <rdf:type rdf:resource="http://example.org/chi2025#UserStudy"/>
+    <rdf:type rdf:resource="http://example.org/chi2025#QuantitativeStudy"/>
+    <rdfs:label>P1 – 4-week in-the-wild user study</rdfs:label>
+
+    <chi:hasMeasure rdf:resource="http://example.org/chi2025#paper-1-measure-1"/>
+    <chi:usesInstrument rdf:resource="http://example.org/chi2025#paper-1-instrument-1"/>
+    <chi:reportsResult rdf:resource="http://example.org/chi2025#paper-1-result-1"/>
+
+    <!-- (선택) 역방향 링크 -->
+    <chi:isStudyReportedIn rdf:resource="http://example.org/chi2025#paper-1"/>
+  </chi:FieldStudy>
+
+  <chi:Measure rdf:about="http://example.org/chi2025#paper-1-measure-1">
+    <rdfs:label>P1 – Smartphone use regulation / incentive effectiveness</rdfs:label>
+  </chi:Measure>
+
+  <chi:Instrument rdf:about="http://example.org/chi2025#paper-1-instrument-1">
+    <rdf:type rdf:resource="http://example.org/chi2025#LoggingInstrumentation"/>
+    <rdfs:label>P1 – App/phone logging for usage + incentive delivery</rdfs:label>
+  </chi:Instrument>
+
+  <chi:Result rdf:about="http://example.org/chi2025#paper-1-result-1">
+    <rdf:type rdf:resource="http://example.org/chi2025#StatisticalResult"/>
+    <rdfs:label>P1 – Cost-effective without loss of effect</rdfs:label>
+  </chi:Result>
+
+  <!-- P1 Persons -->
+  <foaf:Person rdf:about="http://example.org/chi2025#person-186026">
+    <rdfs:label>personId 186026</rdfs:label>
+    <foaf:name>personId 186026</foaf:name>
+  </foaf:Person>
+
+  <foaf:Person rdf:about="http://example.org/chi2025#person-182960">
+    <rdfs:label>personId 182960</rdfs:label>
+    <foaf:name>personId 182960</foaf:name>
+  </foaf:Person>
+
+  <foaf:Person rdf:about="http://example.org/chi2025#person-184762">
+    <rdfs:label>personId 184762</rdfs:label>
+    <foaf:name>personId 184762</foaf:name>
+  </foaf:Person>
+
+  <foaf:Person rdf:about="http://example.org/chi2025#person-185610">
+    <rdfs:label>personId 185610</rdfs:label>
+    <foaf:name>personId 185610</foaf:name>
+  </foaf:Person>
+
+  <!-- P1 Authorships (author + affiliation) -->
+  <chi:Authorship rdf:about="http://example.org/chi2025#auth-p1-a1">
+    <chi:author rdf:resource="http://example.org/chi2025#person-186026"/>
+    <chi:affiliation rdf:resource="http://example.org/chi2025#org-KAIST"/>
+  </chi:Authorship>
+
+  <chi:Authorship rdf:about="http://example.org/chi2025#auth-p1-a2">
+    <chi:author rdf:resource="http://example.org/chi2025#person-182960"/>
+    <chi:affiliation rdf:resource="http://example.org/chi2025#org-KAIST"/>
+  </chi:Authorship>
+
+  <chi:Authorship rdf:about="http://example.org/chi2025#auth-p1-a3">
+    <chi:author rdf:resource="http://example.org/chi2025#person-184762"/>
+    <chi:affiliation rdf:resource="http://example.org/chi2025#org-KangwonNU"/>
+  </chi:Authorship>
+
+  <chi:Authorship rdf:about="http://example.org/chi2025#auth-p1-a4">
+    <chi:author rdf:resource="http://example.org/chi2025#person-185610"/>
+    <chi:affiliation rdf:resource="http://example.org/chi2025#org-KAIST"/>
+  </chi:Authorship>
+
+  <!-- =========================
+       PAPER 2
+       ========================= -->
+  <chi:Paper rdf:about="http://example.org/chi2025#paper-2">
+    <rdfs:label>Developing a Social Support Framework: Understanding the Reciprocity in Human-Chatbot Relationship</rdfs:label>
+    <dct:title>Developing a Social Support Framework: Understanding the Reciprocity in Human-Chatbot Relationship</dct:title>
+    <dct:abstract>Chatbots are increasingly used ... reciprocal support exchanges between users and chatbots.</dct:abstract>
+
+    <chi:paperIncludesStudy rdf:resource="http://example.org/chi2025#paper-2-study-1"/>
+
+    <chi:hasAuthorship rdf:resource="http://example.org/chi2025#auth-p2-a1"/>
+    <chi:hasAuthorship rdf:resource="http://example.org/chi2025#auth-p2-a2"/>
+  </chi:Paper>
+
+  <chi:QualitativeStudy rdf:about="http://example.org/chi2025#paper-2-study-1">
+    <rdfs:label>P2 – Qualitative Reddit community analysis</rdfs:label>
+
+    <chi:hasMeasure rdf:resource="http://example.org/chi2025#paper-2-measure-1"/>
+    <chi:usesInstrument rdf:resource="http://example.org/chi2025#paper-2-instrument-1"/>
+    <chi:reportsResult rdf:resource="http://example.org/chi2025#paper-2-result-1"/>
+
+    <chi:isStudyReportedIn rdf:resource="http://example.org/chi2025#paper-2"/>
+  </chi:QualitativeStudy>
+
+  <chi:Measure rdf:about="http://example.org/chi2025#paper-2-measure-1">
+    <rdfs:label>P2 – 27 social support subcategories (functional/emotional/...)</rdfs:label>
+  </chi:Measure>
+
+  <chi:Instrument rdf:about="http://example.org/chi2025#paper-2-instrument-1">
+    <rdf:type rdf:resource="http://example.org/chi2025#LoggingInstrumentation"/>
+    <rdfs:label>P2 – Reddit data collection (posts + comments)</rdfs:label>
+  </chi:Instrument>
+
+  <chi:Result rdf:about="http://example.org/chi2025#paper-2-result-1">
+    <rdf:type rdf:resource="http://example.org/chi2025#QualitativeResult"/>
+    <rdfs:label>P2 – Reciprocal human–chatbot support framework</rdfs:label>
+  </chi:Result>
+
+  <!-- P2 Persons -->
+  <foaf:Person rdf:about="http://example.org/chi2025#person-183489">
+    <rdfs:label>personId 183489</rdfs:label>
+    <foaf:name>personId 183489</foaf:name>
+  </foaf:Person>
+
+  <foaf:Person rdf:about="http://example.org/chi2025#person-185171">
+    <rdfs:label>personId 185171</rdfs:label>
+    <foaf:name>personId 185171</foaf:name>
+  </foaf:Person>
+
+  <!-- P2 Authorships -->
+  <chi:Authorship rdf:about="http://example.org/chi2025#auth-p2-a1">
+    <chi:author rdf:resource="http://example.org/chi2025#person-183489"/>
+    <chi:affiliation rdf:resource="http://example.org/chi2025#org-SJTU"/>
+    <chi:affiliation rdf:resource="http://example.org/chi2025#org-Utrecht"/>
+  </chi:Authorship>
+
+  <chi:Authorship rdf:about="http://example.org/chi2025#auth-p2-a2">
+    <chi:author rdf:resource="http://example.org/chi2025#person-185171"/>
+    <chi:affiliation rdf:resource="http://example.org/chi2025#org-Utrecht"/>
+  </chi:Authorship>
+
+  <!-- =========================
+       PAPER 3
+       ========================= -->
+  <chi:Paper rdf:about="http://example.org/chi2025#paper-3">
+    <rdfs:label>Lookee: Gaze Tracking-based Infant Vocabulary Comprehension Assessment and Analysis</rdfs:label>
+    <dct:title>Lookee: Gaze Tracking-based Infant Vocabulary Comprehension Assessment and Analysis</dct:title>
+    <dct:abstract>Measuring preverbal vocabulary ... AI-powered clinical tools for toddlers.</dct:abstract>
+
+    <!-- two studies -->
+    <chi:paperIncludesStudy rdf:resource="http://example.org/chi2025#paper-3-study-1"/>
+    <chi:paperIncludesStudy rdf:resource="http://example.org/chi2025#paper-3-study-2"/>
+
+    <!-- authorship (×5) -->
+    <chi:hasAuthorship rdf:resource="http://example.org/chi2025#auth-p3-a1"/>
+    <chi:hasAuthorship rdf:resource="http://example.org/chi2025#auth-p3-a2"/>
+    <chi:hasAuthorship rdf:resource="http://example.org/chi2025#auth-p3-a3"/>
+    <chi:hasAuthorship rdf:resource="http://example.org/chi2025#auth-p3-a4"/>
+    <chi:hasAuthorship rdf:resource="http://example.org/chi2025#auth-p3-a5"/>
+  </chi:Paper>
+
+  <chi:UserStudy rdf:about="http://example.org/chi2025#paper-3-study-1">
+    <rdf:type rdf:resource="http://example.org/chi2025#QuantitativeStudy"/>
+    <rdfs:label>P3 – Gaze-tracking user study with 19 toddlers + parents</rdfs:label>
+
+    <chi:hasMeasure rdf:resource="http://example.org/chi2025#paper-3-measure-1"/>
+    <chi:usesInstrument rdf:resource="http://example.org/chi2025#paper-3-instrument-1"/>
+    <chi:reportsResult rdf:resource="http://example.org/chi2025#paper-3-result-1"/>
+
+    <chi:isStudyReportedIn rdf:resource="http://example.org/chi2025#paper-3"/>
+  </chi:UserStudy>
+
+  <chi:QualitativeStudy rdf:about="http://example.org/chi2025#paper-3-study-2">
+    <rdf:type rdf:resource="http://example.org/chi2025#InterviewStudy"/>
+    <rdfs:label>P3 – Stakeholder interviews (researchers, clinicians, parents)</rdfs:label>
+
+    <!-- 인터뷰도 결과를 보고하므로 동일 패턴 사용 가능(필요 시 별도 result 인스턴스 추가) -->
+    <chi:isStudyReportedIn rdf:resource="http://example.org/chi2025#paper-3"/>
+  </chi:QualitativeStudy>
+
+  <chi:Measure rdf:about="http://example.org/chi2025#paper-3-measure-1">
+    <rdfs:label>P3 – Vocabulary comprehension estimation accuracy + system usability</rdfs:label>
+  </chi:Measure>
+
+  <chi:Instrument rdf:about="http://example.org/chi2025#paper-3-instrument-1">
+    <rdf:type rdf:resource="http://example.org/chi2025#SensorInstrument"/>
+    <rdfs:label>P3 – Gaze-tracking device + IPLP setup</rdfs:label>
+  </chi:Instrument>
+
+  <chi:Result rdf:about="http://example.org/chi2025#paper-3-result-1">
+    <rdf:type rdf:resource="http://example.org/chi2025#StatisticalResult"/>
+    <rdf:type rdf:resource="http://example.org/chi2025#QualitativeResult"/>
+    <rdfs:label>P3 – Good estimation accuracy + design implications per stakeholder</rdfs:label>
+  </chi:Result>
+
+  <!-- P3 Persons -->
+  <foaf:Person rdf:about="http://example.org/chi2025#person-183339">
+    <rdfs:label>personId 183339</rdfs:label>
+    <foaf:name>personId 183339</foaf:name>
+  </foaf:Person>
+
+  <foaf:Person rdf:about="http://example.org/chi2025#person-187017">
+    <rdfs:label>personId 187017</rdfs:label>
+    <foaf:name>personId 187017</foaf:name>
+  </foaf:Person>
+
+  <foaf:Person rdf:about="http://example.org/chi2025#person-185730">
+    <rdfs:label>personId 185730</rdfs:label>
+    <foaf:name>personId 185730</foaf:name>
+  </foaf:Person>
+
+  <foaf:Person rdf:about="http://example.org/chi2025#person-186116">
+    <rdfs:label>personId 186116</rdfs:label>
+    <foaf:name>personId 186116</foaf:name>
+  </foaf:Person>
+
+  <foaf:Person rdf:about="http://example.org/chi2025#person-186285">
+    <rdfs:label>personId 186285</rdfs:label>
+    <foaf:name>personId 186285</foaf:name>
+  </foaf:Person>
+
+  <!-- P3 Authorships -->
+  <chi:Authorship rdf:about="http://example.org/chi2025#auth-p3-a1">
+    <chi:author rdf:resource="http://example.org/chi2025#person-183339"/>
+    <chi:affiliation rdf:resource="http://example.org/chi2025#org-SNU-CSE"/>
+  </chi:Authorship>
+
+  <chi:Authorship rdf:about="http://example.org/chi2025#auth-p3-a2">
+    <chi:author rdf:resource="http://example.org/chi2025#person-187017"/>
+    <chi:affiliation rdf:resource="http://example.org/chi2025#org-SNU-CSE"/>
+  </chi:Authorship>
+
+  <chi:Authorship rdf:about="http://example.org/chi2025#auth-p3-a3">
+    <chi:author rdf:resource="http://example.org/chi2025#person-185730"/>
+    <chi:affiliation rdf:resource="http://example.org/chi2025#org-Sunway"/>
+    <chi:affiliation rdf:resource="http://example.org/chi2025#org-Chosun-DataScience"/>
+  </chi:Authorship>
+
+  <chi:Authorship rdf:about="http://example.org/chi2025#auth-p3-a4">
+    <chi:author rdf:resource="http://example.org/chi2025#person-186116"/>
+    <chi:affiliation rdf:resource="http://example.org/chi2025#org-Chosun-English"/>
+  </chi:Authorship>
+
+  <chi:Authorship rdf:about="http://example.org/chi2025#auth-p3-a5">
+    <chi:author rdf:resource="http://example.org/chi2025#person-186285"/>
+    <chi:affiliation rdf:resource="http://example.org/chi2025#org-SNU-CSE"/>
+  </chi:Authorship>
+
+
+
+  <!-- =========================
+       BRIDGE: Paper 1 (Digital Wellbeing – Micro-Financial Incentives)
+       ========================= -->
+  <!-- chi:SoftwareArtifact ⊑ hcio:Interactive_Computer_System -->
+  <chi:SoftwareArtifact rdf:about="http://example.org/chi2025#p1-app">
+    <rdfs:label>P1 – Wellbeing Incentive App</rdfs:label>
+    <chi:aimsAtGoal rdf:resource="http://example.org/chi2025#p1-goal-reduce-usage"/>
+    <chi:addressesIntention rdf:resource="http://example.org/chi2025#p1-intent-regulate-usage"/>
+  </chi:SoftwareArtifact>
+
+  <!-- UI / I/O 장치 -->
+  <chi:InterfaceArtifact rdf:about="http://example.org/chi2025#p1-ui">
+    <rdfs:label>P1 – Incentive Delivery UI</rdfs:label>
+  </chi:InterfaceArtifact>
+  <chi:InputDeviceArtifact rdf:about="http://example.org/chi2025#p1-input-touch">
+    <rdfs:label>P1 – Smartphone Touch/Input</rdfs:label>
+  </chi:InputDeviceArtifact>
+  <chi:OutputDeviceArtifact rdf:about="http://example.org/chi2025#p1-output-screen">
+    <rdfs:label>P1 – Smartphone Screen</rdfs:label>
+  </chi:OutputDeviceArtifact>
+
+  <!-- 연결 (소프트웨어 → UI/입출력) -->
+  <chi:hasInterface rdf:about="http://example.org/chi2025#p1-app">
+    <rdf:Description rdf:about="http://example.org/chi2025#p1-ui"/>
+  </chi:hasInterface>
+  <chi:hasInputDevice rdf:about="http://example.org/chi2025#p1-app">
+    <rdf:Description rdf:about="http://example.org/chi2025#p1-input-touch"/>
+  </chi:hasInputDevice>
+  <chi:hasOutputDevice rdf:about="http://example.org/chi2025#p1-app">
+    <rdf:Description rdf:about="http://example.org/chi2025#p1-output-screen"/>
+  </chi:hasOutputDevice>
+
+  <!-- Participation / Goal / Intention (⊑ hcio:* 로 추론 확인용) -->
+  <chi:ParticipationPattern rdf:about="http://example.org/chi2025#p1-participation-in-the-wild">
+    <rdfs:label>P1 – In-the-wild usage (4 weeks)</rdfs:label>
+  </chi:ParticipationPattern>
+  <chi:GoalSpecification rdf:about="http://example.org/chi2025#p1-goal-reduce-usage">
+    <rdfs:label>P1 – Reduce problematic smartphone use</rdfs:label>
+  </chi:GoalSpecification>
+  <chi:IntentionSpecification rdf:about="http://example.org/chi2025#p1-intent-regulate-usage">
+    <rdfs:label>P1 – Regulate use via micro-financial incentives</rdfs:label>
+  </chi:IntentionSpecification>
+
+  <!-- Study(이미 있음)와 Participation 연결 -->
+  <chi:involvesParticipationPattern rdf:about="http://example.org/chi2025#paper-1-study-1">
+    <rdf:Description rdf:about="http://example.org/chi2025#p1-participation-in-the-wild"/>
+  </chi:involvesParticipationPattern>
+
+
+  <!-- =========================
+       BRIDGE: Paper 2 (Social-Support Chatbot – Replika/Reddit)
+       ========================= -->
+  <chi:SoftwareArtifact rdf:about="http://example.org/chi2025#p2-chatbot">
+    <rdfs:label>P2 – Social-Support Chatbot</rdfs:label>
+    <chi:aimsAtGoal rdf:resource="http://example.org/chi2025#p2-goal-support-framework"/>
+    <chi:addressesIntention rdf:resource="http://example.org/chi2025#p2-intent-reciprocal-support"/>
+  </chi:SoftwareArtifact>
+
+  <chi:InterfaceArtifact rdf:about="http://example.org/chi2025#p2-chat-ui">
+    <rdfs:label>P2 – Chat UI</rdfs:label>
+  </chi:InterfaceArtifact>
+  <chi:InputDeviceArtifact rdf:about="http://example.org/chi2025#p2-input-keyboard">
+    <rdfs:label>P2 – Keyboard/Text Input</rdfs:label>
+  </chi:InputDeviceArtifact>
+  <chi:OutputDeviceArtifact rdf:about="http://example.org/chi2025#p2-output-chatview">
+    <rdfs:label>P2 – Chat View/Messages</rdfs:label>
+  </chi:OutputDeviceArtifact>
+
+  <chi:hasInterface rdf:about="http://example.org/chi2025#p2-chatbot">
+    <rdf:Description rdf:about="http://example.org/chi2025#p2-chat-ui"/>
+  </chi:hasInterface>
+  <chi:hasInputDevice rdf:about="http://example.org/chi2025#p2-chatbot">
+    <rdf:Description rdf:about="http://example.org/chi2025#p2-input-keyboard"/>
+  </chi:hasInputDevice>
+  <chi:hasOutputDevice rdf:about="http://example.org/chi2025#p2-chatbot">
+    <rdf:Description rdf:about="http://example.org/chi2025#p2-output-chatview"/>
+  </chi:hasOutputDevice>
+
+  <chi:ParticipationPattern rdf:about="http://example.org/chi2025#p2-participation-reddit">
+    <rdfs:label>P2 – Reddit community participation</rdfs:label>
+  </chi:ParticipationPattern>
+  <chi:GoalSpecification rdf:about="http://example.org/chi2025#p2-goal-support-framework">
+    <rdfs:label>P2 – Build reciprocal social-support framework</rdfs:label>
+  </chi:GoalSpecification>
+  <chi:IntentionSpecification rdf:about="http://example.org/chi2025#p2-intent-reciprocal-support">
+    <rdfs:label>P2 – Enable reciprocal support with chatbot</rdfs:label>
+  </chi:IntentionSpecification>
+
+  <chi:involvesParticipationPattern rdf:about="http://example.org/chi2025#paper-2-study-1">
+    <rdf:Description rdf:about="http://example.org/chi2025#p2-participation-reddit"/>
+  </chi:involvesParticipationPattern>
+
+
+  <!-- =========================
+       BRIDGE: Paper 3 (Lookee – Gaze-Tracking)
+       ========================= -->
+  <chi:SoftwareArtifact rdf:about="http://example.org/chi2025#p3-lookee">
+    <rdfs:label>P3 – Lookee Gaze-Tracking System</rdfs:label>
+    <chi:aimsAtGoal rdf:resource="http://example.org/chi2025#p3-goal-assess-vocabulary"/>
+    <chi:addressesIntention rdf:resource="http://example.org/chi2025#p3-intent-measure-gaze"/>
+  </chi:SoftwareArtifact>
+
+  <chi:InterfaceArtifact rdf:about="http://example.org/chi2025#p3-task-ui">
+    <rdfs:label>P3 – IPLP Task UI</rdfs:label>
+  </chi:InterfaceArtifact>
+  <chi:InputDeviceArtifact rdf:about="http://example.org/chi2025#p3-input-eye-tracker">
+    <rdfs:label>P3 – Eye Tracker</rdfs:label>
+  </chi:InputDeviceArtifact>
+  <chi:OutputDeviceArtifact rdf:about="http://example.org/chi2025#p3-output-stimulus-screen">
+    <rdfs:label>P3 – Stimulus Screen</rdfs:label>
+  </chi:OutputDeviceArtifact>
+
+  <chi:hasInterface rdf:about="http://example.org/chi2025#p3-lookee">
+    <rdf:Description rdf:about="http://example.org/chi2025#p3-task-ui"/>
+  </chi:hasInterface>
+  <chi:hasInputDevice rdf:about="http://example.org/chi2025#p3-lookee">
+    <rdf:Description rdf:about="http://example.org/chi2025#p3-input-eye-tracker"/>
+  </chi:hasInputDevice>
+  <chi:hasOutputDevice rdf:about="http://example.org/chi2025#p3-lookee">
+    <rdf:Description rdf:about="http://example.org/chi2025#p3-output-stimulus-screen"/>
+  </chi:hasOutputDevice>
+
+  <chi:ParticipationPattern rdf:about="http://example.org/chi2025#p3-participation-toddlers">
+    <rdfs:label>P3 – Toddlers + parents (lab)</rdfs:label>
+  </chi:ParticipationPattern>
+  <chi:GoalSpecification rdf:about="http://example.org/chi2025#p3-goal-assess-vocabulary">
+    <rdfs:label>P3 – Assess infant vocabulary</rdfs:label>
+  </chi:GoalSpecification>
+  <chi:IntentionSpecification rdf:about="http://example.org/chi2025#p3-intent-measure-gaze">
+    <rdfs:label>P3 – Measure gaze-based comprehension</rdfs:label>
+  </chi:IntentionSpecification>
+
+  <chi:involvesParticipationPattern rdf:about="http://example.org/chi2025#paper-3-study-1">
+    <rdf:Description rdf:about="http://example.org/chi2025#p3-participation-toddlers"/>
+  </chi:involvesParticipationPattern>
+
+
+  <!-- =============== Orgs & Addresses =============== -->
+
+  <!-- P1 orgs -->
+  <org:Organization rdf:about="http://example.org/chi2025#org-KAIST">
+    <rdfs:label>KAIST, School of Computing</rdfs:label>
+    <vcard:organization-name>KAIST</vcard:organization-name>
+    <chi:orgType>University</chi:orgType>
+    <vcard:hasAddress rdf:resource="http://example.org/chi2025#addr-Daejeon-KR"/>
+  </org:Organization>
+
+  <org:Organization rdf:about="http://example.org/chi2025#org-KangwonNU">
+    <rdfs:label>Kangwon National University, Dept. of Computer Science and Engineering</rdfs:label>
+    <vcard:organization-name>Kangwon National University</vcard:organization-name>
+    <chi:orgType>University</chi:orgType>
+    <vcard:hasAddress rdf:resource="http://example.org/chi2025#addr-Chuncheon-KR"/>
+  </org:Organization>
+
+  <!-- P2 orgs -->
+  <org:Organization rdf:about="http://example.org/chi2025#org-SJTU">
+    <rdfs:label>Shanghai Jiao Tong University</rdfs:label>
+    <vcard:organization-name>Shanghai Jiao Tong University</vcard:organization-name>
+    <chi:orgType>University</chi:orgType>
+    <vcard:hasAddress rdf:resource="http://example.org/chi2025#addr-Shanghai-CN"/>
+  </org:Organization>
+
+  <org:Organization rdf:about="http://example.org/chi2025#org-Utrecht">
+    <rdfs:label>Utrecht University</rdfs:label>
+    <vcard:organization-name>Utrecht University</vcard:organization-name>
+    <chi:orgType>University</chi:orgType>
+    <vcard:hasAddress rdf:resource="http://example.org/chi2025#addr-Utrecht-NL"/>
+  </org:Organization>
+
+  <!-- P3 orgs -->
+  <org:Organization rdf:about="http://example.org/chi2025#org-SNU-CSE">
+    <rdfs:label>Seoul National University, Computer Science and Engineering</rdfs:label>
+    <vcard:organization-name>Seoul National University</vcard:organization-name>
+    <chi:orgType>University</chi:orgType>
+    <vcard:hasAddress rdf:resource="http://example.org/chi2025#addr-Seoul-KR"/>
+  </org:Organization>
+
+  <org:Organization rdf:about="http://example.org/chi2025#org-Sunway">
+    <rdfs:label>Sunway University</rdfs:label>
+    <vcard:organization-name>Sunway University</vcard:organization-name>
+    <chi:orgType>University</chi:orgType>
+    <vcard:hasAddress rdf:resource="http://example.org/chi2025#addr-KualaLumpur-MY"/>
+  </org:Organization>
+
+  <org:Organization rdf:about="http://example.org/chi2025#org-Chosun-DataScience">
+    <rdfs:label>Chosun University, Center for Data Science in Humanities</rdfs:label>
+    <vcard:organization-name>Chosun University</vcard:organization-name>
+    <chi:orgType>University</chi:orgType>
+    <vcard:hasAddress rdf:resource="http://example.org/chi2025#addr-Gwangju-KR"/>
+  </org:Organization>
+
+  <org:Organization rdf:about="http://example.org/chi2025#org-Chosun-English">
+    <rdfs:label>Chosun University, English Language and Literature</rdfs:label>
+    <vcard:organization-name>Chosun University</vcard:organization-name>
+    <chi:orgType>University</chi:orgType>
+    <vcard:hasAddress rdf:resource="http://example.org/chi2025#addr-Gwangju-KR"/>
+  </org:Organization>
+
+  <!-- Addresses (country-name 포함) -->
+  <vcard:Address rdf:about="http://example.org/chi2025#addr-Daejeon-KR">
+    <vcard:locality>Daejeon</vcard:locality>
+    <vcard:country-name>Korea, Republic of</vcard:country-name>
+  </vcard:Address>
+
+  <vcard:Address rdf:about="http://example.org/chi2025#addr-Chuncheon-KR">
+    <vcard:locality>Chuncheon-si</vcard:locality>
+    <vcard:country-name>Korea, Republic of</vcard:country-name>
+  </vcard:Address>
+
+  <vcard:Address rdf:about="http://example.org/chi2025#addr-Shanghai-CN">
+    <vcard:locality>Shanghai</vcard:locality>
+    <vcard:country-name>China</vcard:country-name>
+  </vcard:Address>
+
+  <vcard:Address rdf:about="http://example.org/chi2025#addr-Utrecht-NL">
+    <vcard:locality>Utrecht</vcard:locality>
+    <vcard:country-name>Netherlands</vcard:country-name>
+  </vcard:Address>
+
+  <vcard:Address rdf:about="http://example.org/chi2025#addr-Seoul-KR">
+    <vcard:locality>Seoul</vcard:locality>
+    <vcard:country-name>Korea, Republic of</vcard:country-name>
+  </vcard:Address>
+
+  <vcard:Address rdf:about="http://example.org/chi2025#addr-Gwangju-KR">
+    <vcard:locality>Gwangju</vcard:locality>
+    <vcard:country-name>Korea, Republic of</vcard:country-name>
+  </vcard:Address>
+
+  <vcard:Address rdf:about="http://example.org/chi2025#addr-KualaLumpur-MY">
+    <vcard:locality>Kuala Lumpur</vcard:locality>
+    <vcard:country-name>Malaysia</vcard:country-name>
+  </vcard:Address>
+
+</rdf:RDF>

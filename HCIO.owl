@@ -1,0 +1,1010 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#"
+     xml:base="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:hcio="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#">
+        <owl:versionIRI rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#/1.0"/>
+        <hcio:creator xml:lang="en">Simone Dornelas Costa, Ricardo de Almeida Falbo, Monalessa Perini Barcellos</hcio:creator>
+        <hcio:description xml:lang="en">The purpose of the Human-Computer Interaction Ontology (HCIO) is to establish an explicit and shared conceptualization about the HCI phenomenon, describing the main concepts involved in this phenomenon. HCIO is grounded in UFO and reuses concepts from the core System and Software Ontology (SysSwO). Given that a human-computer interaction involves communication between user and interactive computer system, HCIO is composed of sub-ontologies to deal with the interaction participants and with the interaction itself. The Interactive Computer System sub-ontology addresses what an interactive computer system is and its elements, including the user interface. The User sub-ontology focuses on the user and its possible actions when interacting with an interactive computer system. Finally, the HC Interaction sub-ontology links concepts from the other two sub-ontologies to define what a human-computer interaction is. HCIO is a core reference ontology about HCI phenomenon.</hcio:description>
+        <hcio:title xml:lang="en">Human-Computer Interaction Ontology - HCIO</hcio:title>
+        <rdfs:label xml:lang="en">HCIO</rdfs:label>
+        <owl:versionInfo xml:lang="en">1.2</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#SysSwO -->
+
+    <owl:AnnotationProperty rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#SysSwO"/>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#UFO -->
+
+    <owl:AnnotationProperty rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#UFO"/>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#creator -->
+
+    <owl:AnnotationProperty rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#creator"/>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#description -->
+
+    <owl:AnnotationProperty rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#description"/>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#title -->
+
+    <owl:AnnotationProperty rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#title"/>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#SysSwO -->
+
+    <owl:AnnotationProperty rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#SysSwO"/>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#UFO -->
+
+    <owl:AnnotationProperty rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#UFO"/>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#creator -->
+
+    <owl:AnnotationProperty rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#creator"/>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#description -->
+
+    <owl:AnnotationProperty rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#description"/>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#title -->
+
+    <owl:AnnotationProperty rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#bringsAbout -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#bringsAbout">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#causedBy -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#causedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#causes -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#causes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#composedOf -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#composedOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#connects -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#connects">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#constitutedOf -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#constitutedOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#directlyCauses -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#directlyCauses">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#executionOf -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#executionOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#handles -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#handles">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#has -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#has">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#includes -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#includes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#inheresIn -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#inheresIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#interprets -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#interprets">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#isDoneUsing -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#isDoneUsing">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#materializationOf -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#materializationOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#mayEvaluateAchievementOf -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#mayEvaluateAchievementOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#participationOf -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#participationOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#presents -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#presents">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#propositionalContentOf -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#propositionalContentOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#supports -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#supports">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#triggers -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#triggers">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Atomic_User_Participation -->
+
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Atomic_User_Participation">
+        <rdfs:subClassOf rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Participation"/>
+        <owl:disjointWith rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Complex_User_Participation"/>
+        <hcio:description xml:lang="en">Single User Participation. E.g., user touching her finger to unlock her mobile phone by using her fingerprint; user clicking a button.</hcio:description>
+        <rdfs:isDefinedBy xml:lang="en">HCIO User Sub-Ontology</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Complex_Interactive_Computer_System -->
+
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Complex_Interactive_Computer_System">
+        <rdfs:subClassOf rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Interactive_Computer_System"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#composedOf"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Interactive_Computer_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <hcio:description xml:lang="en">Interactive Computer System composed of others Interactive Computer System. E.g., IoT in a smart home.</hcio:description>
+        <rdfs:isDefinedBy xml:lang="en">HCIO Interactive Computer System Sub-Ontology</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Complex_User_Participation -->
+
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Complex_User_Participation">
+        <rdfs:subClassOf rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Participation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#composedOf"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Participation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <hcio:description xml:lang="en">Participation composed of two or more User Participations. E.g., user typing her password and then answering security questions to log in the e-mail system.</hcio:description>
+        <rdfs:isDefinedBy xml:lang="en">HCIO User Sub-Ontology</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Computer_Machine -->
+
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Computer_Machine">
+        <rdfs:subClassOf rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Hardware_Equipment"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#connects"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Hardware_Equipment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <hcio:description xml:lang="en">Hardware Equipment able to run programs, processing, transforming and storing data. E.g., a notebook, a desktop computer, a mobile phone, a smart watch.</hcio:description>
+        <rdfs:isDefinedBy xml:lang="en">SysSwO</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Hardware_Equipment -->
+
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Hardware_Equipment">
+        <hcio:UFO xml:lang="en">subtypeOf Object</hcio:UFO>
+        <rdfs:isDefinedBy xml:lang="en">SysSwO</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Human-Computer_Interaction -->
+
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Human-Computer_Interaction">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#composedOf"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Interactive_Computer_System_Participation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#composedOf"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Participation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <hcio:UFO xml:lang="en">subtypeOf Complex Action</hcio:UFO>
+        <hcio:description xml:lang="en">An exchange of information (i.e., communication) between a User and an Interactive Computer System via the User Interface. E.g., user touching her finger to unlock her mobile phone by using her fingerprint and the mobile phone system showing a message informing that the fingerprint was not recognized; user entering a room, in a smart home, which automatically turns on the light.</hcio:description>
+        <rdfs:isDefinedBy xml:lang="en">HCIO HC Interaction Sub-Ontology</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#IO_Equipment -->
+
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#IO_Equipment">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Input_Equipment"/>
+                    <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Output_Equipment"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <hcio:description xml:lang="en">Input and Output Equipment</hcio:description>
+        <rdfs:isDefinedBy xml:lang="en">HCIO Interactive Computer System Sub-Ontology</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Input_Equipment -->
+
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Input_Equipment">
+        <rdfs:subClassOf rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Hardware_Equipment"/>
+        <hcio:description xml:lang="en">Hardware Equipment used to receive and transmit information or data from a User (input). E.g.: keyboard, mouse, sensors.</hcio:description>
+        <rdfs:isDefinedBy xml:lang="en">HCIO Interactive Computer System Sub-Ontology</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Intentional_User_Participation__User_Action -->
+
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Intentional_User_Participation__User_Action">
+        <rdfs:subClassOf rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Participation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#causedBy"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Intention"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Unintentional_User_Participation"/>
+        <hcio:UFO xml:lang="en">subtypeOf Action Contribution</hcio:UFO>
+        <hcio:description xml:lang="en">User participation intentionally performed. E.g., user touching her finger to unlock her mobile phone by using her fingerprint; user clicking the send button to send an e-mail.</hcio:description>
+        <rdfs:isDefinedBy xml:lang="en">HCIO User Sub-Ontology</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Interactive_Computer_System -->
+
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Interactive_Computer_System">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#composedOf"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Computer_Machine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#composedOf"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Hardware_Equipment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#composedOf"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Interface"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#has"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Loaded_Interactive_Software_System_Copy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <hcio:SysSwO xml:lang="en">subtypeOf Computer System</hcio:SysSwO>
+        <hcio:UFO xml:lang="en">Computer System subtypeOf Object</hcio:UFO>
+        <hcio:description xml:lang="en">Computer System that combines User Interface, Computer Machine and Loaded Software System Copies, used to process, transform, store, display or transmit information or data by receiving input, and communicating output to Users. E.g., a desktop computer, its monitor, keyboard, mouse and software systems loaded in the computer (operational system, browser, text editor, etc.); smart watch; smart mobile phone.</hcio:description>
+        <rdfs:isDefinedBy xml:lang="en">HCIO Interactive Computer System Sub-Ontology</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Interactive_Computer_System_Participation -->
+
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Interactive_Computer_System_Participation">
+        <hcio:UFO xml:lang="en">subtypeOf Object Participation</hcio:UFO>
+        <hcio:description xml:lang="en">The participation of an Interactive Computer System in a Human-Computer Interaction. E.g., the participation of the mobile phone system in the human-computer interaction in which the user touches her finger to unlock her mobile phone by using her fingerprint and the mobile phone system shows a message informing that the fingerprint was not recognized; the participation of the smart watch in the human-computer interaction in which the user uses the smart watch to monitor her heart pulse.</hcio:description>
+        <rdfs:isDefinedBy xml:lang="en">HCIO HC Interaction Sub-Ontology</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Interactive_Software_System -->
+
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Interactive_Software_System">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#constitutedOf"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Interface_Program"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <hcio:SysSwO xml:lang="en">subtypeOf Software System
+Software System subtypeOf Software Item</hcio:SysSwO>
+        <hcio:UFO xml:lang="en">Software Item subtypeOf Object</hcio:UFO>
+        <hcio:description xml:lang="en">Software system that includes, among other programs, User Interface Programs. E.g., a home banking system and its graphical programs that deals with user interface aspects.</hcio:description>
+        <rdfs:isDefinedBy xml:lang="en">HCIO Interactive Computer System Sub-Ontology</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Loaded_Interactive_Software_System_Copy -->
+
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Loaded_Interactive_Software_System_Copy">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#includes"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Loaded_User_Interface_Program_Copy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#inheresIn"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Computer_Machine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#materializationOf"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Interactive_Software_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <hcio:SysSwO xml:lang="en">subtypeOf Loaded Software System Copy</hcio:SysSwO>
+        <hcio:UFO xml:lang="en">Loaded Software System Copy subtypeOf Disposition</hcio:UFO>
+        <hcio:description xml:lang="en">Loaded Software System Copy that is the materialization of an Interactive Software System. E.g., the copy of the home banking system loaded in the computer of a certain user.</hcio:description>
+        <rdfs:isDefinedBy xml:lang="en">HCIO Interactive Computer System Sub-Ontology</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Loaded_User_Interface_Program_Copy -->
+
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Loaded_User_Interface_Program_Copy">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#handles"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Interface"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#inheresIn"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Computer_Machine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#materializationOf"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Interface_Program"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <hcio:SysSwO xml:lang="en">subtypeOf Loaded Program Copy</hcio:SysSwO>
+        <hcio:UFO xml:lang="en">Loaded Program Copy subtypeOf Disposition</hcio:UFO>
+        <hcio:description xml:lang="en">Loaded Program Copy that is the materialization of a User Interface Program. E.g., the copy of the programs that deal with interface aspects of the home banking system loaded in the computer of a certain user.</hcio:description>
+        <rdfs:isDefinedBy xml:lang="en">HCIO Interactive Computer System Sub-Ontology</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Output_Equipment -->
+
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Output_Equipment">
+        <rdfs:subClassOf rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Hardware_Equipment"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#presents"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Observable_State"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#supports"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Interpretation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <hcio:description xml:lang="en">Hardware Equipment used to transmit or display information or data, communicating output to Users. E. g.: Monitor, speaker, etc.</hcio:description>
+        <rdfs:isDefinedBy xml:lang="en">HCIO Interactive Computer System Sub-Ontology</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Program_Copy_Execution -->
+
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Program_Copy_Execution">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#bringsAbout"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Observable_State"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#directlyCauses"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Program_Copy_Execution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#directlyCauses"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Interpretation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#executionOf"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Loaded_User_Interface_Program_Copy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <hcio:UFO xml:lang="en">subtypeOf Event</hcio:UFO>
+        <rdfs:isDefinedBy xml:lang="en">SysSwO</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Unintentional_User_Participation -->
+
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Unintentional_User_Participation">
+        <rdfs:subClassOf rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Participation"/>
+        <hcio:description xml:lang="en">User participation unintentionally performed. E.g., a user walking and unintentionally giving information about number of steps to a monitoring system loaded in her smart watch; user entering a room, in a smart home, which automatically turns on the light.</hcio:description>
+        <rdfs:isDefinedBy xml:lang="en">HCIO User Sub-Ontology</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User -->
+
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User">
+        <owl:disjointWith rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Intention"/>
+        <hcio:UFO xml:lang="en">subtypeOf Person</hcio:UFO>
+        <hcio:description xml:lang="en">A Person who interacts with (or is expected to interact with) an Interactive Computer System. E.g., a person who uses a home banking system, smart watch or smart mobile phone.</hcio:description>
+        <rdfs:isDefinedBy xml:lang="en">HCIO User Sub-Ontology</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Goal -->
+
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Goal">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#propositionalContentOf"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Intention"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <hcio:UFO xml:lang="en">subtypeOf Goal</hcio:UFO>
+        <hcio:description xml:lang="en">The propositional content of something the User wants to achieve (User Intention). E.g., the goal of buying fly tickets to go on vacation.</hcio:description>
+        <rdfs:isDefinedBy xml:lang="en">HCIO User Sub-Ontology</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Initiated_Action -->
+
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Initiated_Action">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Intentional_User_Participation__User_Action"/>
+                    <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Initiated_Participation"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <hcio:description xml:lang="en">Intentional User Action of inputting data or information using an Input Equipment. E.g., user touching her finger to unlock her mobile phone by using her fingerprint; user clicking the send button to send an email.</hcio:description>
+        <rdfs:isDefinedBy xml:lang="en">HCIO User Sub-Ontology</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Initiated_Participation -->
+
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Initiated_Participation">
+        <rdfs:subClassOf rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Participation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#bringsAbout"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Input_Resulting_State"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#causes"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Interpretation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#directlyCauses"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Program_Copy_Execution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#isDoneUsing"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Input_Equipment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Interpretation"/>
+        <hcio:description xml:lang="en">Event in which a User inputs data or information using an Input Equipment. E.g., user touching her finger to unlock her mobile phone by using her fingerprint.</hcio:description>
+        <rdfs:isDefinedBy xml:lang="en">HCIO User Sub-Ontology</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Input_Resulting_State -->
+
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Input_Resulting_State">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#triggers"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Program_Copy_Execution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <hcio:UFO xml:lang="en">subtypeOf Situation</hcio:UFO>
+        <hcio:description xml:lang="en">A situation achieved as the result of User’s input (data or information) received by means of an Input Equipment. E.g., the user fingerprint captured by the mobile phone system; the button clicked.</hcio:description>
+        <rdfs:isDefinedBy xml:lang="en">HCIO HC Interaction Sub-Ontology</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Intention -->
+
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Intention">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#inheresIn"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <hcio:UFO xml:lang="en">subtypeOf Intention</hcio:UFO>
+        <hcio:description xml:lang="en">An Intention that inheres in a User, causing him to perform intentional user actions. E.g., the intention to travel on vacation.</hcio:description>
+        <rdfs:isDefinedBy xml:lang="en">HCIO User Sub-Ontology</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Interface -->
+
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Interface">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#composedOf"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Input_Equipment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#composedOf"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Output_Equipment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <hcio:UFO xml:lang="en">subtypeOf Object</hcio:UFO>
+        <hcio:description xml:lang="en">All components of an interactive system (software or hardware) that provide information and controls for the user to accomplish specific tasks with the interactive system. E.g., mouse, keyboard, monitor, sensors and the software that handle them.</hcio:description>
+        <rdfs:isDefinedBy xml:lang="en">HCIO Interactive Computer System Sub-Ontology</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Interface_Program -->
+
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Interface_Program">
+        <hcio:SysSwO xml:lang="en">subtypeOf Program
+Program subtypeOf Software Item</hcio:SysSwO>
+        <hcio:UFO xml:lang="en">Software Item subtypeOf Object</hcio:UFO>
+        <hcio:description xml:lang="en">Program that deals with aspects related to the User Interface. E.g., the program responsible for the graphical user interface of the component that captures the user fingerprint to unlock a mobile phone.</hcio:description>
+        <rdfs:isDefinedBy xml:lang="en">HCIO Interactive Computer System Sub-Ontology</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Interpretation -->
+
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Interpretation">
+        <rdfs:subClassOf rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Participation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#directlyCauses"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Initiated_Participation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#interprets"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Observable_State"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#mayEvaluateAchievementOf"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Goal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <hcio:description xml:lang="en">Event in which a User interprets the system output. E.g., user interpreting a message from the mobile phone system informing that the captured fingerprint was not recognized; user sensing her smart watch vibrate; user hearing the notification sound of new message.</hcio:description>
+        <rdfs:isDefinedBy xml:lang="en">HCIO User Sub-Ontology</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Observable_State -->
+
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Observable_State">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#triggers"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Program_Copy_Execution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#triggers"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Interpretation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <hcio:SysSwO xml:lang="en">subtypeOf Computing Resulting State</hcio:SysSwO>
+        <hcio:UFO xml:lang="en">Computing Resulting State subtypeOf Situation</hcio:UFO>
+        <hcio:description xml:lang="en">A situation (an Observable State) perceivable by Users, typically achieved as the result (output) of a Program Copy Execution, communicated or presented by an Output Equipment. E.g., a message shown in the mobile phone screen informing the user that the captured fingerprint was not recognized, smart watch vibrating; sounds emitted by the mobile phone.</hcio:description>
+        <rdfs:isDefinedBy xml:lang="en">HCIO Interactive HC Interaction Sub-Ontology</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Participation -->
+
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Participation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#participationOf"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <hcio:UFO xml:lang="en">subtypeOf Action Contribution</hcio:UFO>
+        <hcio:description xml:lang="en">Event in which the user participates in a Human-Computer Interaction. E.g., user walking and unintentionally giving information about number of steps to a monitoring system loaded in her smart watch; user touching her finger to unlock her mobile phone by using her fingerprint; user interpreting a message from the mobile phone system informing that the captured fingerprint was not recognized.</hcio:description>
+        <rdfs:isDefinedBy xml:lang="en">HCIO User Sub-Ontology</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Computer_Machine"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Input_Equipment"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Output_Equipment"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Computer_Machine"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Goal"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Intention"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Observable_State"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Participation"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Computer_Machine"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Goal"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Intention"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Participation"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Hardware_Equipment"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Human-Computer_Interaction"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Interactive_Computer_System"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Interactive_Computer_System_Participation"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Interactive_Software_System"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Loaded_Interactive_Software_System_Copy"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Loaded_User_Interface_Program_Copy"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Program_Copy_Execution"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Goal"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Input_Resulting_State"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Intention"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Interface"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Interface_Program"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Observable_State"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Participation"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Hardware_Equipment"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Human-Computer_Interaction"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Interactive_Computer_System"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Interactive_Computer_System_Participation"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Interactive_Software_System"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Loaded_Interactive_Software_System_Copy"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Loaded_User_Interface_Program_Copy"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Goal"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Input_Resulting_State"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Intention"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Interface"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Interface_Program"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Observable_State"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Participation"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Hardware_Equipment"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Interactive_Computer_System"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Interactive_Computer_System_Participation"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Interactive_Software_System"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Loaded_Interactive_Software_System_Copy"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Loaded_User_Interface_Program_Copy"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Goal"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Input_Resulting_State"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Intention"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Interface"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Interface_Program"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Observable_State"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Participation"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Hardware_Equipment"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Interactive_Computer_System"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Interactive_Software_System"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Loaded_Interactive_Software_System_Copy"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Loaded_User_Interface_Program_Copy"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Goal"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Input_Resulting_State"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Intention"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Interface"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Interface_Program"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Participation"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Hardware_Equipment"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Interactive_Computer_System"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Interactive_Software_System"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Loaded_Interactive_Software_System_Copy"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Loaded_User_Interface_Program_Copy"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Goal"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Intention"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Interface"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Interface_Program"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Observable_State"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Participation"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Hardware_Equipment"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Goal"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Intention"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Observable_State"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Participation"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Goal"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Initiated_Action"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Intention"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Goal"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Intention"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Goal"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Intention"/>
+            <rdf:Description rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Participation"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
