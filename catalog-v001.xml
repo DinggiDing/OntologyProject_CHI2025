@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#/1.0" uri="HCIO.owl"/>
+    <uri id="Imports Wizard Entry" name="http://example.org/chi/instances" uri="instance_real.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1763450085456" name="http://example.org/chi2025" uri="root-ontology_author.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1763450085456" name="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl" uri="HCIO.owl"/>
+    </group>
+</catalog>
