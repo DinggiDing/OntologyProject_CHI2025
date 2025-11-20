@@ -1,0 +1,374 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xml:base="http://example.org/chi2025/topics"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:chi="http://example.org/chi2025#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+
+    <!-- Ontology header -->
+    <owl:Ontology rdf:about="http://example.org/chi2025/topics">
+        <owl:imports rdf:resource="http://example.org/chi2025"/>
+        <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <rdfs:label xml:lang="en">CHI 2025 Topics Ontology (cluster-based)</rdfs:label>
+    </owl:Ontology>
+
+    <!-- Concept Scheme -->
+    <skos:ConceptScheme rdf:about="http://example.org/chi2025#CHITopics">
+        <skos:prefLabel xml:lang="en">CHI 2025 Topic Scheme (cluster-based)</skos:prefLabel>
+    </skos:ConceptScheme>
+
+    <!-- ========================= -->
+    <!-- 1. Social Computing (Top) -->
+    <!-- ========================= -->
+
+    <skos:Concept rdf:about="http://example.org/chi2025#SocialComputing">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Social Computing and Online Life</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://example.org/chi2025#CHITopics"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="http://example.org/chi2025#FuturesOfSocialPlatforms">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Futures of Social Platforms</skos:prefLabel>
+        <skos:broader rdf:resource="http://example.org/chi2025#SocialComputing"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="http://example.org/chi2025#SocialPersonalizationAndFeeds">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Social Personalization and Algorithmic Feeds</skos:prefLabel>
+        <skos:broader rdf:resource="http://example.org/chi2025#SocialComputing"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="http://example.org/chi2025#OnlineSelfDisclosureAndIdentity">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Online Self-Disclosure and Identity</skos:prefLabel>
+        <skos:broader rdf:resource="http://example.org/chi2025#SocialComputing"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="http://example.org/chi2025#SocialSupportAndPeerChatbots">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Social Support and Peer Chatbots</skos:prefLabel>
+        <skos:broader rdf:resource="http://example.org/chi2025#SocialComputing"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <!-- ============================= -->
+    <!-- 2. Learning and Education     -->
+    <!-- ============================= -->
+
+    <skos:Concept rdf:about="http://example.org/chi2025#LearningAndEducation">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Learning and Education</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://example.org/chi2025#CHITopics"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="http://example.org/chi2025#EngagingLearningActivities">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Engaging Learning Activities and Experiences</skos:prefLabel>
+        <skos:broader rdf:resource="http://example.org/chi2025#LearningAndEducation"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="http://example.org/chi2025#TrainingAndObserverEffects">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Training and Observer Effects</skos:prefLabel>
+        <skos:broader rdf:resource="http://example.org/chi2025#LearningAndEducation"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="http://example.org/chi2025#EarlyChildComprehensionAssessment">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Early Child and Toddler Comprehension Assessment</skos:prefLabel>
+        <skos:broader rdf:resource="http://example.org/chi2025#LearningAndEducation"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="http://example.org/chi2025#StudentWellbeingAndDisclosure">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Student Wellbeing and Disclosure Practices</skos:prefLabel>
+        <skos:broader rdf:resource="http://example.org/chi2025#LearningAndEducation"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <!-- ================================== -->
+    <!-- 3. Collaboration and Hybrid Work   -->
+    <!-- ================================== -->
+
+    <skos:Concept rdf:about="http://example.org/chi2025#CollaborationAndHybridWork">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Collaboration and Hybrid Work</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://example.org/chi2025#CHITopics"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="http://example.org/chi2025#MobileHybridCollaboration">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Mobile and Hybrid Collaboration</skos:prefLabel>
+        <skos:broader rdf:resource="http://example.org/chi2025#CollaborationAndHybridWork"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="http://example.org/chi2025#RemoteTeamCoordination">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Remote Team Coordination</skos:prefLabel>
+        <skos:broader rdf:resource="http://example.org/chi2025#CollaborationAndHybridWork"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="http://example.org/chi2025#CollaborativeSensemaking">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Collaborative Sensemaking and Analysis</skos:prefLabel>
+        <skos:broader rdf:resource="http://example.org/chi2025#CollaborationAndHybridWork"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="http://example.org/chi2025#PhysicalDigitalWorkflowIntegration">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Physical–Digital Workflow Integration</skos:prefLabel>
+        <skos:broader rdf:resource="http://example.org/chi2025#CollaborationAndHybridWork"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <!-- ========================================= -->
+    <!-- 4. XR, VR, and Embodied Interaction       -->
+    <!-- ========================================= -->
+
+    <skos:Concept rdf:about="http://example.org/chi2025#XRAndEmbodiedInteraction">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">XR, VR, and Embodied Interaction</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://example.org/chi2025#CHITopics"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="http://example.org/chi2025#EmbodiedVRInteraction">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Embodied VR Interaction</skos:prefLabel>
+        <skos:broader rdf:resource="http://example.org/chi2025#XRAndEmbodiedInteraction"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="http://example.org/chi2025#SpatialVRInteraction">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Spatial Interaction in VR</skos:prefLabel>
+        <skos:broader rdf:resource="http://example.org/chi2025#XRAndEmbodiedInteraction"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="http://example.org/chi2025#ImmersiveTrainingAndSimulation">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Immersive Training and Simulation</skos:prefLabel>
+        <skos:broader rdf:resource="http://example.org/chi2025#XRAndEmbodiedInteraction"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="http://example.org/chi2025#XRNavigationAndWayfinding">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">XR Navigation and Wayfinding</skos:prefLabel>
+        <skos:broader rdf:resource="http://example.org/chi2025#XRAndEmbodiedInteraction"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <!-- ============================================= -->
+    <!-- 5. Personal Informatics and Digital Wellbeing -->
+    <!-- ============================================= -->
+
+    <skos:Concept rdf:about="http://example.org/chi2025#PersonalInformaticsAndDigitalWellbeing">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Personal Informatics and Digital Wellbeing</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://example.org/chi2025#CHITopics"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="http://example.org/chi2025#PersonalInformaticsAndGoals">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Personal Informatics and Goal Tracking</skos:prefLabel>
+        <skos:broader rdf:resource="http://example.org/chi2025#PersonalInformaticsAndDigitalWellbeing"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="http://example.org/chi2025#SmartphoneUseAndIncentives">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Smartphone Use and Incentive-based Interventions</skos:prefLabel>
+        <skos:broader rdf:resource="http://example.org/chi2025#PersonalInformaticsAndDigitalWellbeing"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="http://example.org/chi2025#EverydayFatigueAndWorkloadTracking">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Everyday Fatigue and Workload Tracking</skos:prefLabel>
+        <skos:broader rdf:resource="http://example.org/chi2025#PersonalInformaticsAndDigitalWellbeing"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="http://example.org/chi2025#SelfReflectionAndBehaviorChange">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Self-Reflection and Behavior Change</skos:prefLabel>
+        <skos:broader rdf:resource="http://example.org/chi2025#PersonalInformaticsAndDigitalWellbeing"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <!-- ===================================== -->
+    <!-- 6. Ethics, Privacy, and Fairness      -->
+    <!-- ===================================== -->
+
+    <skos:Concept rdf:about="http://example.org/chi2025#EthicsPrivacyFairness">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Ethics, Privacy, and Fairness</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://example.org/chi2025#CHITopics"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="http://example.org/chi2025#TargetedEthicsInterventions">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Targeted Ethics Interventions</skos:prefLabel>
+        <skos:broader rdf:resource="http://example.org/chi2025#EthicsPrivacyFairness"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="http://example.org/chi2025#ParticipatoryEthicsMethods">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Participatory Ethics in HCI Research</skos:prefLabel>
+        <skos:broader rdf:resource="http://example.org/chi2025#EthicsPrivacyFairness"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="http://example.org/chi2025#AlgorithmicFairnessAndBias">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Algorithmic Fairness and Bias Mitigation</skos:prefLabel>
+        <skos:broader rdf:resource="http://example.org/chi2025#EthicsPrivacyFairness"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="http://example.org/chi2025#DataDisclosureAndConsent">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Data Disclosure and Consent Practices</skos:prefLabel>
+        <skos:broader rdf:resource="http://example.org/chi2025#EthicsPrivacyFairness"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <!-- =============================================== -->
+    <!-- 7. Interaction Techniques and Performance       -->
+    <!-- =============================================== -->
+
+    <skos:Concept rdf:about="http://example.org/chi2025#InteractionTechniquesAndPerformance">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Interaction Techniques and Performance</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://example.org/chi2025#CHITopics"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="http://example.org/chi2025#PointingAndSelectionPerformance">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Pointing and Selection Performance</skos:prefLabel>
+        <skos:broader rdf:resource="http://example.org/chi2025#InteractionTechniquesAndPerformance"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="http://example.org/chi2025#SpatialNavigationPerformance">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Spatial Navigation Performance</skos:prefLabel>
+        <skos:broader rdf:resource="http://example.org/chi2025#InteractionTechniquesAndPerformance"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="http://example.org/chi2025#ErrorRatesAndTaskCompletion">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Error Rates and Task Completion</skos:prefLabel>
+        <skos:broader rdf:resource="http://example.org/chi2025#InteractionTechniquesAndPerformance"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="http://example.org/chi2025#EmbodiedAndSpatialInputTechniques">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Embodied and Spatial Input Techniques</skos:prefLabel>
+        <skos:broader rdf:resource="http://example.org/chi2025#InteractionTechniquesAndPerformance"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <!-- ======================================= -->
+    <!-- 8. HCI Research and Design Tools        -->
+    <!-- ======================================= -->
+
+    <skos:Concept rdf:about="http://example.org/chi2025#HCIResearchAndDesignTools">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">HCI Research and Design Tools</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://example.org/chi2025#CHITopics"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="http://example.org/chi2025#CollaborativeVisualizationTools">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Collaborative Visualization Tools</skos:prefLabel>
+        <skos:broader rdf:resource="http://example.org/chi2025#HCIResearchAndDesignTools"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="http://example.org/chi2025#QualitativeAnalysisSupportTools">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Qualitative Analysis Support Tools</skos:prefLabel>
+        <skos:broader rdf:resource="http://example.org/chi2025#HCIResearchAndDesignTools"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="http://example.org/chi2025#ChatbotAssistedUserStudies">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Chatbot-assisted User Studies and Data Collection</skos:prefLabel>
+        <skos:broader rdf:resource="http://example.org/chi2025#HCIResearchAndDesignTools"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="http://example.org/chi2025#DesignAndFabricationWorkflowTools">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Design and Fabrication Workflow Tools</skos:prefLabel>
+        <skos:broader rdf:resource="http://example.org/chi2025#HCIResearchAndDesignTools"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <!-- ============================================== -->
+    <!-- 9. Accessibility, Navigation, and Support      -->
+    <!-- ============================================== -->
+
+    <skos:Concept rdf:about="http://example.org/chi2025#AccessibilityNavigationSupport">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Accessibility, Navigation, and Support</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://example.org/chi2025#CHITopics"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="http://example.org/chi2025#NavigationSupportForLowVision">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Navigation Support for Low-vision Users</skos:prefLabel>
+        <skos:broader rdf:resource="http://example.org/chi2025#AccessibilityNavigationSupport"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="http://example.org/chi2025#AccessibleLandmarkRepresentation">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Accessible Landmark Representation</skos:prefLabel>
+        <skos:broader rdf:resource="http://example.org/chi2025#AccessibilityNavigationSupport"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="http://example.org/chi2025#SupportTechnologiesForVulnerableUsers">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Support Technologies for Vulnerable Users</skos:prefLabel>
+        <skos:broader rdf:resource="http://example.org/chi2025#AccessibilityNavigationSupport"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="http://example.org/chi2025#AccessibleLearningAndSupportSystems">
+        <rdf:type rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <skos:prefLabel xml:lang="en">Accessible Learning and Support Systems</skos:prefLabel>
+        <skos:broader rdf:resource="http://example.org/chi2025#AccessibilityNavigationSupport"/>
+        <skos:inScheme rdf:resource="http://example.org/chi2025#CHITopics"/>
+    </skos:Concept>
+
+</rdf:RDF>
