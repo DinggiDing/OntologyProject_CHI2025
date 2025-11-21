@@ -740,6 +740,26 @@
 
     <owl:Class rdf:about="http://example.org/chi2025#Instrument"/>
     
+    <!-- ============================
+        Instrument Subclasses
+    =============================== -->
+
+    <!-- Sensor Instruments -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#EyeTracker">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#SensorInstrument"/>
+        <rdfs:label>Eye Tracker</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/chi2025#WearableSensor">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#SensorInstrument"/>
+        <rdfs:label>Wearable Sensor</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/chi2025#SmartwatchSensor">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#SensorInstrument"/>
+        <rdfs:label>Smartwatch Sensor</rdfs:label>
+    </owl:Class>
 
 
     <!-- http://example.org/chi2025#IntentionSpecification -->
@@ -778,6 +798,51 @@
 
     <owl:Class rdf:about="http://example.org/chi2025#Measure"/>
     
+
+    <!-- ============================
+        Measure Subclasses
+    =============================== -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#ReactionTimeMeasure">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#PerformanceMeasure"/>
+        <rdfs:label>Reaction Time Measure</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/chi2025#CompletionTimeMeasure">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#PerformanceMeasure"/>
+        <rdfs:label>Completion Time Measure</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/chi2025#ErrorRateMeasure">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#PerformanceMeasure"/>
+        <rdfs:label>Error Rate Measure</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/chi2025#AccuracyMeasure">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#PerformanceMeasure"/>
+        <rdfs:label>Accuracy Measure</rdfs:label>
+    </owl:Class>
+
+
+    <!-- Subjective -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#LikertScaleMeasure">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#SubjectiveMeasure"/>
+        <rdfs:label>Likert Scale Measure</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/chi2025#UsabilityRatingMeasure">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#SubjectiveMeasure"/>
+        <rdfs:label>Usability Rating Measure</rdfs:label>
+    </owl:Class>
+
+
+    <!-- Physiological -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#HeartRateMeasure">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#PhysiologicalMeasure"/>
+        <rdfs:label>Heart Rate Measure</rdfs:label>
+    </owl:Class>
 
 
     <!-- http://example.org/chi2025#OutputDeviceArtifact -->
