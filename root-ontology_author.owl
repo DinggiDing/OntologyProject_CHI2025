@@ -635,13 +635,17 @@
 
     <!-- http://example.org/chi2025#Affiliation -->
 
-    <owl:Class rdf:about="http://example.org/chi2025#Affiliation"/>
+    <owl:Class rdf:about="http://example.org/chi2025#Affiliation">
+        <rdfs:comment xml:lang="en">An affiliation associated with an authorship, typically representing the organization with which an author is linked at the time of a CHI paper.</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://example.org/chi2025#Author -->
 
-    <owl:Class rdf:about="http://example.org/chi2025#Author"/>
+    <owl:Class rdf:about="http://example.org/chi2025#Author">
+        <rdfs:comment xml:lang="en">An author who contributes to a CHI paper and is represented through one or more authorship relations to that paper.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -668,6 +672,7 @@
                 <owl:onClass rdf:resource="http://example.org/chi2025#Paper"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A reified authorship relation that links exactly one person, one paper, and at least one organization affiliation for that author.</rdfs:comment>
     </owl:Class>
     
 
@@ -676,6 +681,7 @@
 
     <owl:Class rdf:about="http://example.org/chi2025#BaselineComparisonStudy">
         <rdfs:subClassOf rdf:resource="http://example.org/chi2025#Study"/>
+        <rdfs:comment xml:lang="en">A study that compares a proposed system or condition against one or more baseline conditions to assess relative performance or effects.</rdfs:comment>
     </owl:Class>
     
 
@@ -684,6 +690,7 @@
 
     <owl:Class rdf:about="http://example.org/chi2025#DeviceArtifact">
         <rdfs:subClassOf rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Hardware_Equipment"/>
+        <rdfs:comment xml:lang="en">A hardware device used in an interactive system or study, such as an input or output device associated with a software artifact.</rdfs:comment>
     </owl:Class>
     
 
@@ -692,6 +699,7 @@
 
     <owl:Class rdf:about="http://example.org/chi2025#DiaryStudy">
         <rdfs:subClassOf rdf:resource="http://example.org/chi2025#QualitativeStudy"/>
+        <rdfs:comment xml:lang="en">A qualitative study in which participants keep diaries or logs of their experiences or behaviors over time.</rdfs:comment>
     </owl:Class>
     
 
@@ -700,6 +708,7 @@
 
     <owl:Class rdf:about="http://example.org/chi2025#FieldStudy">
         <rdfs:subClassOf rdf:resource="http://example.org/chi2025#Study"/>
+        <rdfs:comment xml:lang="en">A study conducted in real-world settings, observing participants using systems or interventions in their natural context.</rdfs:comment>
     </owl:Class>
     
 
@@ -708,6 +717,7 @@
 
     <owl:Class rdf:about="http://example.org/chi2025#FocusGroupDiscussion">
         <rdfs:subClassOf rdf:resource="http://example.org/chi2025#QualitativeStudy"/>
+        <rdfs:comment xml:lang="en">A qualitative study method in which a group of participants discuss topics or designs together under facilitation.</rdfs:comment>
     </owl:Class>
     
 
@@ -716,6 +726,7 @@
 
     <owl:Class rdf:about="http://example.org/chi2025#FormativeInterview">
         <rdfs:subClassOf rdf:resource="http://example.org/chi2025#InterviewStudy"/>
+        <rdfs:comment xml:lang="en">An interview-based study conducted primarily to inform or shape the design, requirements, or research questions of subsequent work.</rdfs:comment>
     </owl:Class>
     
 
@@ -724,6 +735,7 @@
 
     <owl:Class rdf:about="http://example.org/chi2025#GoalSpecification">
         <rdfs:subClassOf rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Goal"/>
+        <rdfs:comment xml:lang="en">A specification of a user goal that an interactive system or study aims to satisfy or support.</rdfs:comment>
     </owl:Class>
     
 
@@ -732,13 +744,16 @@
 
     <owl:Class rdf:about="http://example.org/chi2025#InputDeviceArtifact">
         <rdfs:subClassOf rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Input_Equipment"/>
+        <rdfs:comment xml:lang="en">A hardware device used primarily for user input in an interactive system, such as keyboard, touch, or sensors.</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://example.org/chi2025#Instrument -->
 
-    <owl:Class rdf:about="http://example.org/chi2025#Instrument"/>
+    <owl:Class rdf:about="http://example.org/chi2025#Instrument">
+        <rdfs:comment xml:lang="en">A data collection instrument used in a study, such as a logging setup, questionnaire, or sensor-based apparatus.</rdfs:comment>
+    </owl:Class>
     
     <!-- ============================
         Instrument Subclasses
@@ -749,16 +764,19 @@
     <owl:Class rdf:about="http://example.org/chi2025#EyeTracker">
         <rdfs:subClassOf rdf:resource="http://example.org/chi2025#SensorInstrument"/>
         <rdfs:label>Eye Tracker</rdfs:label>
+        <rdfs:comment xml:lang="en">A sensor-based instrument that measures users&apos; gaze or eye movements during interaction or experimental tasks.</rdfs:comment>
     </owl:Class>
 
     <owl:Class rdf:about="http://example.org/chi2025#WearableSensor">
         <rdfs:subClassOf rdf:resource="http://example.org/chi2025#SensorInstrument"/>
         <rdfs:label>Wearable Sensor</rdfs:label>
+        <rdfs:comment xml:lang="en">A sensor instrument worn on the body to capture physiological or behavioral signals relevant to a study.</rdfs:comment>
     </owl:Class>
 
     <owl:Class rdf:about="http://example.org/chi2025#SmartwatchSensor">
         <rdfs:subClassOf rdf:resource="http://example.org/chi2025#SensorInstrument"/>
         <rdfs:label>Smartwatch Sensor</rdfs:label>
+        <rdfs:comment xml:lang="en">A wearable sensor embedded in a smartwatch that collects usage, activity, or physiological data in a study.</rdfs:comment>
     </owl:Class>
 
 
@@ -766,6 +784,7 @@
 
     <owl:Class rdf:about="http://example.org/chi2025#IntentionSpecification">
         <rdfs:subClassOf rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Intention"/>
+        <rdfs:comment xml:lang="en">A specification of a user intention or desired behavior that an interactive system or intervention is designed to address.</rdfs:comment>
     </owl:Class>
     
 
@@ -774,6 +793,7 @@
 
     <owl:Class rdf:about="http://example.org/chi2025#InterfaceArtifact">
         <rdfs:subClassOf rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Interface"/>
+        <rdfs:comment xml:lang="en">A user interface component or configuration that mediates interaction between a user and a software artifact.</rdfs:comment>
     </owl:Class>
     
 
@@ -782,6 +802,7 @@
 
     <owl:Class rdf:about="http://example.org/chi2025#InterviewStudy">
         <rdfs:subClassOf rdf:resource="http://example.org/chi2025#QualitativeStudy"/>
+        <rdfs:comment xml:lang="en">A qualitative study that collects data primarily through structured, semi-structured, or unstructured interviews with participants.</rdfs:comment>
     </owl:Class>
     
 
@@ -790,13 +811,16 @@
 
     <owl:Class rdf:about="http://example.org/chi2025#LoggingInstrumentation">
         <rdfs:subClassOf rdf:resource="http://example.org/chi2025#Instrument"/>
+        <rdfs:comment xml:lang="en">An instrument that records interaction traces or usage logs of a system, typically in the background.</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://example.org/chi2025#Measure -->
 
-    <owl:Class rdf:about="http://example.org/chi2025#Measure"/>
+    <owl:Class rdf:about="http://example.org/chi2025#Measure">
+        <rdfs:comment xml:lang="en">A variable or quantity assessed in a study to capture outcomes, behaviors, or experiences of interest.</rdfs:comment>
+    </owl:Class>
     
 
     <!-- ============================
@@ -806,21 +830,25 @@
     <owl:Class rdf:about="http://example.org/chi2025#ReactionTimeMeasure">
         <rdfs:subClassOf rdf:resource="http://example.org/chi2025#PerformanceMeasure"/>
         <rdfs:label>Reaction Time Measure</rdfs:label>
+        <rdfs:comment xml:lang="en">A performance measure that captures the time users take to respond to stimuli or complete specific actions.</rdfs:comment>
     </owl:Class>
 
     <owl:Class rdf:about="http://example.org/chi2025#CompletionTimeMeasure">
         <rdfs:subClassOf rdf:resource="http://example.org/chi2025#PerformanceMeasure"/>
         <rdfs:label>Completion Time Measure</rdfs:label>
+        <rdfs:comment xml:lang="en">A performance measure that records how long it takes users to complete tasks or workflows.</rdfs:comment>
     </owl:Class>
 
     <owl:Class rdf:about="http://example.org/chi2025#ErrorRateMeasure">
         <rdfs:subClassOf rdf:resource="http://example.org/chi2025#PerformanceMeasure"/>
         <rdfs:label>Error Rate Measure</rdfs:label>
+        <rdfs:comment xml:lang="en">A performance measure that quantifies how frequently users make errors while performing tasks.</rdfs:comment>
     </owl:Class>
 
     <owl:Class rdf:about="http://example.org/chi2025#AccuracyMeasure">
         <rdfs:subClassOf rdf:resource="http://example.org/chi2025#PerformanceMeasure"/>
         <rdfs:label>Accuracy Measure</rdfs:label>
+        <rdfs:comment xml:lang="en">A performance measure that assesses how correct or precise users&apos; responses or task outcomes are.</rdfs:comment>
     </owl:Class>
 
 
@@ -829,11 +857,13 @@
     <owl:Class rdf:about="http://example.org/chi2025#LikertScaleMeasure">
         <rdfs:subClassOf rdf:resource="http://example.org/chi2025#SubjectiveMeasure"/>
         <rdfs:label>Likert Scale Measure</rdfs:label>
+        <rdfs:comment xml:lang="en">A subjective measure based on Likert-scale responses, typically capturing attitudes, agreement, or perceived experience.</rdfs:comment>
     </owl:Class>
 
     <owl:Class rdf:about="http://example.org/chi2025#UsabilityRatingMeasure">
         <rdfs:subClassOf rdf:resource="http://example.org/chi2025#SubjectiveMeasure"/>
         <rdfs:label>Usability Rating Measure</rdfs:label>
+        <rdfs:comment xml:lang="en">A subjective measure that captures users&apos; ratings of a system&apos;s usability or user experience quality.</rdfs:comment>
     </owl:Class>
 
 
@@ -842,6 +872,7 @@
     <owl:Class rdf:about="http://example.org/chi2025#HeartRateMeasure">
         <rdfs:subClassOf rdf:resource="http://example.org/chi2025#PhysiologicalMeasure"/>
         <rdfs:label>Heart Rate Measure</rdfs:label>
+        <rdfs:comment xml:lang="en">A physiological measure that records heart rate or related cardiac signals as part of a study.</rdfs:comment>
     </owl:Class>
 
 
@@ -849,6 +880,7 @@
 
     <owl:Class rdf:about="http://example.org/chi2025#OutputDeviceArtifact">
         <rdfs:subClassOf rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Output_Equipment"/>
+        <rdfs:comment xml:lang="en">A hardware device used primarily for presenting output from an interactive system, such as screens or speakers.</rdfs:comment>
     </owl:Class>
     
 
@@ -864,6 +896,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>CHI Paper</rdfs:label>
+        <rdfs:comment xml:lang="en">A CHI research paper modeled as a bibliographic article that has one or more human authors and may report studies, measures, and results.</rdfs:comment>
     </owl:Class>
     
 
@@ -872,6 +905,7 @@
 
     <owl:Class rdf:about="http://example.org/chi2025#ParticipationPattern">
         <rdfs:subClassOf rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Participation"/>
+        <rdfs:comment xml:lang="en">A pattern describing how users participate in a system or study, such as in-the-wild usage or lab sessions.</rdfs:comment>
     </owl:Class>
     
 
@@ -880,6 +914,7 @@
 
     <owl:Class rdf:about="http://example.org/chi2025#PerformanceMeasure">
         <rdfs:subClassOf rdf:resource="http://example.org/chi2025#Measure"/>
+        <rdfs:comment xml:lang="en">A measure that captures how well users perform tasks, often in terms of speed, accuracy, or efficiency.</rdfs:comment>
     </owl:Class>
     
 
@@ -888,6 +923,7 @@
 
     <owl:Class rdf:about="http://example.org/chi2025#PhysiologicalMeasure">
         <rdfs:subClassOf rdf:resource="http://example.org/chi2025#Measure"/>
+        <rdfs:comment xml:lang="en">A measure based on physiological signals such as heart rate, skin conductance, or other bodily responses.</rdfs:comment>
     </owl:Class>
     
 
@@ -896,6 +932,7 @@
 
     <owl:Class rdf:about="http://example.org/chi2025#QualitativeResult">
         <rdfs:subClassOf rdf:resource="http://example.org/chi2025#Result"/>
+        <rdfs:comment xml:lang="en">A result derived from qualitative analysis, such as themes, categories, or narratives about user experiences.</rdfs:comment>
     </owl:Class>
     
 
@@ -905,6 +942,7 @@
     <owl:Class rdf:about="http://example.org/chi2025#QualitativeStudy">
         <rdfs:subClassOf rdf:resource="http://example.org/chi2025#Study"/>
         <owl:disjointWith rdf:resource="http://example.org/chi2025#QuantitativeStudy"/>
+        <rdfs:comment xml:lang="en">A study that primarily uses qualitative methods, such as interviews, observations, or diary entries, to understand user experiences.</rdfs:comment>
     </owl:Class>
     
 
@@ -913,6 +951,7 @@
 
     <owl:Class rdf:about="http://example.org/chi2025#QuantitativeStudy">
         <rdfs:subClassOf rdf:resource="http://example.org/chi2025#Study"/>
+        <rdfs:comment xml:lang="en">A study that primarily uses quantitative methods, such as experiments or surveys, and statistical analysis of numerical data.</rdfs:comment>
     </owl:Class>
     
 
@@ -921,13 +960,16 @@
 
     <owl:Class rdf:about="http://example.org/chi2025#Questionnaire">
         <rdfs:subClassOf rdf:resource="http://example.org/chi2025#Instrument"/>
+        <rdfs:comment xml:lang="en">An instrument that collects structured responses from participants through questions, often using scales or multiple-choice items.</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://example.org/chi2025#Result -->
 
-    <owl:Class rdf:about="http://example.org/chi2025#Result"/>
+    <owl:Class rdf:about="http://example.org/chi2025#Result">
+        <rdfs:comment xml:lang="en">An outcome produced by a study, such as findings, effect estimates, or qualitative insights.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -935,13 +977,16 @@
 
     <owl:Class rdf:about="http://example.org/chi2025#SensorInstrument">
         <rdfs:subClassOf rdf:resource="http://example.org/chi2025#Instrument"/>
+        <rdfs:comment xml:lang="en">An instrument that relies on sensors to capture signals or data from users or the environment.</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://example.org/chi2025#Session -->
 
-    <owl:Class rdf:about="http://example.org/chi2025#Session"/>
+    <owl:Class rdf:about="http://example.org/chi2025#Session">
+        <rdfs:comment xml:lang="en">A unit of time-bounded participation in a study or interaction with a system, often associated with specific tasks or conditions.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -949,6 +994,7 @@
 
     <owl:Class rdf:about="http://example.org/chi2025#SoftwareArtifact">
         <rdfs:subClassOf rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Interactive_Computer_System"/>
+        <rdfs:comment xml:lang="en">An interactive software system or prototype that users interact with and that may be evaluated in CHI studies.</rdfs:comment>
     </owl:Class>
     
 
@@ -957,13 +1003,16 @@
 
     <owl:Class rdf:about="http://example.org/chi2025#StatisticalResult">
         <rdfs:subClassOf rdf:resource="http://example.org/chi2025#Result"/>
+        <rdfs:comment xml:lang="en">A result expressed through statistical analysis, such as effect sizes, significance tests, or model estimates.</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://example.org/chi2025#Study -->
 
-    <owl:Class rdf:about="http://example.org/chi2025#Study"/>
+    <owl:Class rdf:about="http://example.org/chi2025#Study">
+        <rdfs:comment xml:lang="en">A research study reported in a CHI paper, which may involve users, interventions, measures, and results.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -971,6 +1020,7 @@
 
     <owl:Class rdf:about="http://example.org/chi2025#SubjectiveMeasure">
         <rdfs:subClassOf rdf:resource="http://example.org/chi2025#Measure"/>
+        <rdfs:comment xml:lang="en">A measure based on participants&apos; self-reported perceptions, feelings, or judgments rather than purely objective performance or signals.</rdfs:comment>
     </owl:Class>
     
 
@@ -979,6 +1029,7 @@
 
     <owl:Class rdf:about="http://example.org/chi2025#SystemUsageInterview">
         <rdfs:subClassOf rdf:resource="http://example.org/chi2025#InterviewStudy"/>
+        <rdfs:comment xml:lang="en">An interview-based study that focuses on how people use a particular system in their real or intended contexts.</rdfs:comment>
     </owl:Class>
     
 
@@ -987,6 +1038,7 @@
 
     <owl:Class rdf:about="http://example.org/chi2025#ThinkAloudStudy">
         <rdfs:subClassOf rdf:resource="http://example.org/chi2025#QualitativeStudy"/>
+        <rdfs:comment xml:lang="en">A qualitative study in which participants verbalize their thoughts while interacting with a system or performing tasks.</rdfs:comment>
     </owl:Class>
     
 
@@ -995,13 +1047,16 @@
 
     <owl:Class rdf:about="http://example.org/chi2025#TopicConcept">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">A topical concept that represents a CHI research theme or topic used to annotate papers and studies.</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://example.org/chi2025#Track -->
 
-    <owl:Class rdf:about="http://example.org/chi2025#Track"/>
+    <owl:Class rdf:about="http://example.org/chi2025#Track">
+        <rdfs:comment xml:lang="en">A track or category within the CHI conference to which papers can be assigned.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -1009,6 +1064,7 @@
 
     <owl:Class rdf:about="http://example.org/chi2025#UsageScenarioInterview">
         <rdfs:subClassOf rdf:resource="http://example.org/chi2025#InterviewStudy"/>
+        <rdfs:comment xml:lang="en">An interview study that explores possible or actual scenarios of using a system, focusing on context and activities.</rdfs:comment>
     </owl:Class>
     
 
@@ -1017,6 +1073,7 @@
 
     <owl:Class rdf:about="http://example.org/chi2025#UserStudy">
         <rdfs:subClassOf rdf:resource="http://example.org/chi2025#Study"/>
+        <rdfs:comment xml:lang="en">A study in which people interact with a system, prototype, or concept, and their behaviors or experiences are observed or measured.</rdfs:comment>
     </owl:Class>
     
 
@@ -1025,25 +1082,32 @@
 
     <owl:Class rdf:about="http://example.org/chi2025#WizardOfOzStudy">
         <rdfs:subClassOf rdf:resource="http://example.org/chi2025#Study"/>
+        <rdfs:comment xml:lang="en">A study in which a human secretly performs functions of a system component, allowing evaluation of interactions before full automation.</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://purl.org/ontology/bibo/Article -->
 
-    <owl:Class rdf:about="http://purl.org/ontology/bibo/Article"/>
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Article">
+        <rdfs:comment xml:lang="en">A bibliographic article, such as a scholarly publication, reused here as the superclass of CHI papers.</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://schema.org/Organization -->
 
-    <owl:Class rdf:about="http://schema.org/Organization"/>
+    <owl:Class rdf:about="http://schema.org/Organization">
+        <rdfs:comment xml:lang="en">An organization as defined in schema.org, representing institutions or groups such as companies or universities.</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
-    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+        <rdfs:comment xml:lang="en">A SKOS concept used to represent ideas or topics within a concept scheme.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -1057,6 +1121,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>Postal Address</rdfs:label>
+        <rdfs:comment xml:lang="en">A postal address from the vCard ontology, used to locate organizations or other entities.</rdfs:comment>
     </owl:Class>
     
 
@@ -1071,6 +1136,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>Organization</rdfs:label>
+        <rdfs:comment xml:lang="en">An organization from the W3C ORG ontology, representing institutions or groups that can have postal addresses.</rdfs:comment>
     </owl:Class>
     
 
@@ -1079,55 +1145,72 @@
 
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
         <rdfs:label>Person</rdfs:label>
+        <rdfs:comment xml:lang="en">A person as defined in FOAF, used here to represent authors and other individuals in CHI studies.</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Hardware_Equipment -->
 
-    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Hardware_Equipment"/>
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Hardware_Equipment">
+        <rdfs:comment xml:lang="en">A class from HCIO representing hardware equipment that may be involved in human-computer interaction.</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Input_Equipment -->
 
-    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Input_Equipment"/>
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Input_Equipment">
+        <rdfs:comment xml:lang="en">A class from HCIO representing equipment used for user input in interactive computer systems.</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Interactive_Computer_System -->
 
-    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Interactive_Computer_System"/>
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Interactive_Computer_System">
+        <rdfs:comment xml:lang="en">A class from HCIO representing an interactive computer system that supports communication with users.</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Output_Equipment -->
 
-    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Output_Equipment"/>
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Output_Equipment">
+        <rdfs:comment xml:lang="en">A class from HCIO representing equipment used to present output from an interactive system to users.</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Goal -->
 
-    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Goal"/>
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Goal">
+        <rdfs:comment xml:lang="en">A class from HCIO representing goals that users aim to achieve through interaction with systems.</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Intention -->
 
-    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Intention"/>
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Intention">
+        <rdfs:comment xml:lang="en">A class from HCIO representing users&apos; intentions when engaging in human-computer interaction.</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Interface -->
 
-    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Interface"/>
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Interface">
+        <rdfs:comment xml:lang="en">A class from HCIO representing user interfaces through which people interact with interactive computer systems.</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Participation -->
 
-    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Participation"/>
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Participation">
+        <rdfs:comment xml:lang="en">A class from HCIO representing the participation of users in interaction or study contexts.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -1165,4 +1248,3 @@
 
 
 <!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
-
