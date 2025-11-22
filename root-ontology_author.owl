@@ -17,8 +17,9 @@
      xmlns:schema="http://schema.org/">
     <owl:Ontology rdf:about="http://example.org/chi2025">
         <owl:versionIRI rdf:resource="http://example.org/chi2025/1.0"/>
-        <owl:imports rdf:resource="http://example.org/chi/instances"/>
-        <owl:imports rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#/1.0"/>
+        <!-- 스키마 제출을 위한 imports 일시적 주석 처리 -->
+        <!-- <owl:imports rdf:resource="http://example.org/chi/instances"/> 
+        <owl:imports rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#/1.0"/> -->
         <rdfs:label>CHI 2025 Ontology</rdfs:label>
     </owl:Ontology>
     
