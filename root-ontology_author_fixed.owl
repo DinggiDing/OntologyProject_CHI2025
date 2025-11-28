@@ -1,0 +1,1248 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://example.org/chi2025#"
+     xml:base="http://example.org/chi2025"
+     xmlns:ns="http://www.w3.org/2006/vcard/ns#"
+     xmlns:org="http://www.w3.org/ns/org#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:chi1="http://example.org/chi2025#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:hcio="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/">
+    <owl:Ontology rdf:about="http://example.org/chi2025">
+        <owl:versionIRI rdf:resource="http://example.org/chi2025/1.0"/>
+        <owl:imports rdf:resource="http://example.org/chi/instances"/> 
+        <owl:imports rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#/1.0"/>
+        <rdfs:label>CHI 2025 Ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/chi2025#aboutTopic -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#aboutTopic">
+        <owl:inverseOf rdf:resource="http://example.org/chi2025#isTopicOf"/>
+        <rdfs:domain rdf:resource="http://example.org/chi2025#Paper"/>
+        <rdfs:range rdf:resource="http://example.org/chi2025#TopicConcept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#addressesIntention -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#addressesIntention">
+        <owl:inverseOf rdf:resource="http://example.org/chi2025#isAddressedBy"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://example.org/chi2025#SoftwareArtifact"/>
+                    <rdf:Description rdf:about="http://example.org/chi2025#Study"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://example.org/chi2025#IntentionSpecification"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#affiliatedWith -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#affiliatedWith">
+        <owl:inverseOf rdf:resource="http://example.org/chi2025#hasMember"/>
+        <rdfs:domain rdf:resource="http://example.org/chi2025#Author"/>
+        <rdfs:range rdf:resource="http://example.org/chi2025#Affiliation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#affiliation -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#affiliation">
+        <rdfs:domain rdf:resource="http://example.org/chi2025#Authorship"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <rdfs:label>affiliation (organization @ time of paper)</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#aimsAtGoal -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#aimsAtGoal">
+        <owl:inverseOf rdf:resource="http://example.org/chi2025#isGoalOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://example.org/chi2025#SoftwareArtifact"/>
+                    <rdf:Description rdf:about="http://example.org/chi2025#Study"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://example.org/chi2025#GoalSpecification"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#author -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#author">
+        <rdfs:domain rdf:resource="http://example.org/chi2025#Authorship"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:label>author (person)</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#hasAuthor -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#hasAuthor">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/creator"/>
+        <rdfs:domain rdf:resource="http://example.org/chi2025#Paper"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.org/chi2025#hasAuthorship"/>
+            <rdf:Description rdf:about="http://example.org/chi2025#author"/>
+        </owl:propertyChainAxiom>
+        <rdfs:label>has author (direct)</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#hasAuthorOrg -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#hasAuthorOrg">
+        <rdfs:domain rdf:resource="http://example.org/chi2025#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.org/chi2025#hasAuthorship"/>
+            <rdf:Description rdf:about="http://example.org/chi2025#affiliation"/>
+        </owl:propertyChainAxiom>
+        <rdfs:label>has author organization (inferred)</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#hasAuthorship -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#hasAuthorship">
+        <owl:inverseOf rdf:resource="http://example.org/chi2025#ofPaper"/>
+        <rdfs:domain rdf:resource="http://example.org/chi2025#Paper"/>
+        <rdfs:range rdf:resource="http://example.org/chi2025#Authorship"/>
+        <rdfs:label>has authorship node</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#hasDevice -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#hasDevice">
+        <owl:inverseOf rdf:resource="http://example.org/chi2025#isDeviceOf"/>
+        <rdfs:domain rdf:resource="http://example.org/chi2025#SoftwareArtifact"/>
+        <rdfs:range rdf:resource="http://example.org/chi2025#DeviceArtifact"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#hasInputDevice -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#hasInputDevice">
+        <rdfs:subPropertyOf rdf:resource="http://example.org/chi2025#hasDevice"/>
+        <owl:inverseOf rdf:resource="http://example.org/chi2025#isInputDeviceOf"/>
+        <rdfs:domain rdf:resource="http://example.org/chi2025#SoftwareArtifact"/>
+        <rdfs:range rdf:resource="http://example.org/chi2025#InputDeviceArtifact"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#hasInterface -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#hasInterface">
+        <owl:inverseOf rdf:resource="http://example.org/chi2025#isInterfaceOf"/>
+        <rdfs:domain rdf:resource="http://example.org/chi2025#SoftwareArtifact"/>
+        <rdfs:range rdf:resource="http://example.org/chi2025#InterfaceArtifact"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#hasMeasure -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#hasMeasure">
+        <owl:inverseOf rdf:resource="http://example.org/chi2025#isMeasureOf"/>
+        <rdfs:domain rdf:resource="http://example.org/chi2025#Study"/>
+        <rdfs:range rdf:resource="http://example.org/chi2025#Measure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#hasMember -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#hasMember">
+        <rdfs:domain rdf:resource="http://example.org/chi2025#Affiliation"/>
+        <rdfs:range rdf:resource="http://example.org/chi2025#Author"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#hasOutputDevice -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#hasOutputDevice">
+        <rdfs:subPropertyOf rdf:resource="http://example.org/chi2025#hasDevice"/>
+        <owl:inverseOf rdf:resource="http://example.org/chi2025#isOutputDeviceOf"/>
+        <rdfs:domain rdf:resource="http://example.org/chi2025#SoftwareArtifact"/>
+        <rdfs:range rdf:resource="http://example.org/chi2025#OutputDeviceArtifact"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#hasPaper -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#hasPaper">
+        <owl:inverseOf rdf:resource="http://example.org/chi2025#hasSession"/>
+        <rdfs:domain rdf:resource="http://example.org/chi2025#Session"/>
+        <rdfs:range rdf:resource="http://example.org/chi2025#Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#hasPaperInTrack -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#hasPaperInTrack">
+        <owl:inverseOf rdf:resource="http://example.org/chi2025#hasTrack"/>
+        <rdfs:domain rdf:resource="http://example.org/chi2025#Track"/>
+        <rdfs:range rdf:resource="http://example.org/chi2025#Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#hasPrimaryTopic -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#hasPrimaryTopic">
+        <rdfs:subPropertyOf rdf:resource="http://example.org/chi2025#aboutTopic"/>
+        <owl:inverseOf rdf:resource="http://example.org/chi2025#isPrimaryTopicOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/chi2025#Paper"/>
+        <rdfs:range rdf:resource="http://example.org/chi2025#TopicConcept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#hasSession -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#hasSession">
+        <rdfs:domain rdf:resource="http://example.org/chi2025#Paper"/>
+        <rdfs:range rdf:resource="http://example.org/chi2025#Session"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#hasTrack -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#hasTrack">
+        <rdfs:domain rdf:resource="http://example.org/chi2025#Paper"/>
+        <rdfs:range rdf:resource="http://example.org/chi2025#Track"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#involvesParticipationPattern -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#involvesParticipationPattern">
+        <owl:inverseOf rdf:resource="http://example.org/chi2025#isParticipationPatternIn"/>
+        <rdfs:domain rdf:resource="http://example.org/chi2025#Study"/>
+        <rdfs:range rdf:resource="http://example.org/chi2025#ParticipationPattern"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#isAddressedBy -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#isAddressedBy">
+        <rdfs:domain rdf:resource="http://example.org/chi2025#IntentionSpecification"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://example.org/chi2025#SoftwareArtifact"/>
+                    <rdf:Description rdf:about="http://example.org/chi2025#Study"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#isAuthorOf -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#isAuthorOf">
+        <rdfs:domain rdf:resource="http://example.org/chi2025#Author"/>
+        <rdfs:range rdf:resource="http://example.org/chi2025#Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#isDeviceOf -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#isDeviceOf">
+        <rdfs:domain rdf:resource="http://example.org/chi2025#DeviceArtifact"/>
+        <rdfs:range rdf:resource="http://example.org/chi2025#SoftwareArtifact"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#isGoalOf -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#isGoalOf">
+        <rdfs:domain rdf:resource="http://example.org/chi2025#GoalSpecification"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://example.org/chi2025#SoftwareArtifact"/>
+                    <rdf:Description rdf:about="http://example.org/chi2025#Study"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#isInputDeviceOf -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#isInputDeviceOf">
+        <rdfs:domain rdf:resource="http://example.org/chi2025#InputDeviceArtifact"/>
+        <rdfs:range rdf:resource="http://example.org/chi2025#SoftwareArtifact"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#isInstrumentOf -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#isInstrumentOf">
+        <owl:inverseOf rdf:resource="http://example.org/chi2025#usesInstrument"/>
+        <rdfs:domain rdf:resource="http://example.org/chi2025#Instrument"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://example.org/chi2025#Measure"/>
+                    <rdf:Description rdf:about="http://example.org/chi2025#Study"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#isInterfaceOf -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#isInterfaceOf">
+        <rdfs:domain rdf:resource="http://example.org/chi2025#InterfaceArtifact"/>
+        <rdfs:range rdf:resource="http://example.org/chi2025#SoftwareArtifact"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#isMeasureOf -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#isMeasureOf">
+        <rdfs:domain rdf:resource="http://example.org/chi2025#Measure"/>
+        <rdfs:range rdf:resource="http://example.org/chi2025#Study"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#isOutputDeviceOf -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#isOutputDeviceOf">
+        <rdfs:domain rdf:resource="http://example.org/chi2025#OutputDeviceArtifact"/>
+        <rdfs:range rdf:resource="http://example.org/chi2025#SoftwareArtifact"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#isParticipationPatternIn -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#isParticipationPatternIn">
+        <rdfs:domain rdf:resource="http://example.org/chi2025#ParticipationPattern"/>
+        <rdfs:range rdf:resource="http://example.org/chi2025#Study"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#isPrimaryTopicOf -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#isPrimaryTopicOf">
+        <rdfs:domain rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <rdfs:range rdf:resource="http://example.org/chi2025#Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#isProposedIn -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#isProposedIn">
+        <owl:inverseOf rdf:resource="http://example.org/chi2025#proposesArtifact"/>
+        <rdfs:domain rdf:resource="http://example.org/chi2025#SoftwareArtifact"/>
+        <rdfs:range rdf:resource="http://example.org/chi2025#Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#isResultOf -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#isResultOf">
+        <owl:inverseOf rdf:resource="http://example.org/chi2025#reportsResult"/>
+        <rdfs:domain rdf:resource="http://example.org/chi2025#Result"/>
+        <rdfs:range rdf:resource="http://example.org/chi2025#Study"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#isStudyReportedIn -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#isStudyReportedIn">
+        <owl:inverseOf rdf:resource="http://example.org/chi2025#paperIncludesStudy"/>
+        <rdfs:domain rdf:resource="http://example.org/chi2025#Study"/>
+        <rdfs:range rdf:resource="http://example.org/chi2025#Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#isTopicOf -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#isTopicOf">
+        <rdfs:domain rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <rdfs:range rdf:resource="http://example.org/chi2025#Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#isTopicOfStudy -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#isTopicOfStudy">
+        <owl:inverseOf rdf:resource="http://example.org/chi2025#studyAboutTopic"/>
+        <rdfs:domain rdf:resource="http://example.org/chi2025#TopicConcept"/>
+        <rdfs:range rdf:resource="http://example.org/chi2025#Study"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#ofPaper -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#ofPaper">
+        <rdfs:domain rdf:resource="http://example.org/chi2025#Authorship"/>
+        <rdfs:range rdf:resource="http://example.org/chi2025#Paper"/>
+        <rdfs:label>of paper</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#paperIncludesStudy -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#paperIncludesStudy">
+        <rdfs:domain rdf:resource="http://example.org/chi2025#Paper"/>
+        <rdfs:range rdf:resource="http://example.org/chi2025#Study"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#proposesArtifact -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#proposesArtifact">
+        <rdfs:domain rdf:resource="http://example.org/chi2025#Paper"/>
+        <rdfs:range rdf:resource="http://example.org/chi2025#SoftwareArtifact"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#relatedPaper -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#relatedPaper">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/chi2025#Paper"/>
+        <rdfs:range rdf:resource="http://example.org/chi2025#Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#reportsResult -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#reportsResult">
+        <rdfs:domain rdf:resource="http://example.org/chi2025#Study"/>
+        <rdfs:range rdf:resource="http://example.org/chi2025#Result"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#studyAboutTopic -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#studyAboutTopic">
+        <rdfs:subPropertyOf rdf:resource="http://example.org/chi2025#aboutTopic"/>
+        <rdfs:domain rdf:resource="http://example.org/chi2025#Study"/>
+        <rdfs:range rdf:resource="http://example.org/chi2025#TopicConcept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/chi2025#usesInstrument -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/chi2025#usesInstrument">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://example.org/chi2025#Measure"/>
+                    <rdf:Description rdf:about="http://example.org/chi2025#Study"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://example.org/chi2025#Instrument"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#hasAddress -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/vcard/ns#hasAddress">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/vcard/ns#Address"/>
+        <rdfs:label>has address</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/org#memberOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#memberOf">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <rdfs:label>member of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/chi2025#orgType -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/chi2025#orgType">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/abstract -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/abstract">
+        <rdfs:domain rdf:resource="http://example.org/chi2025#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/identifier">
+        <rdfs:domain rdf:resource="http://example.org/chi2025#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/title">
+        <rdfs:domain rdf:resource="http://example.org/chi2025#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#country-name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/vcard/ns#country-name">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/vcard/ns#Address"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#locality -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/vcard/ns#locality">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/vcard/ns#Address"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#organization-name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/vcard/ns#organization-name">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#region -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/vcard/ns#region">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/vcard/ns#Address"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/chi2025#Affiliation -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#Affiliation">
+        <rdfs:comment xml:lang="en">An affiliation associated with an authorship, typically representing the organization with which an author is linked at the time of a CHI paper.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/chi2025#Author -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#Author">
+        <rdfs:comment xml:lang="en">An author who contributes to a CHI paper and is represented through one or more authorship relations to that paper.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/chi2025#Authorship -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#Authorship">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/chi2025#affiliation"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/org#Organization"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/chi2025#author"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/chi2025#ofPaper"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/chi2025#Paper"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A reified authorship relation that links exactly one person, one paper, and at least one organization affiliation for that author.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/chi2025#BaselineComparisonStudy -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#BaselineComparisonStudy">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#Study"/>
+        <rdfs:comment xml:lang="en">A study that compares a proposed system or condition against one or more baseline conditions to assess relative performance or effects.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/chi2025#DeviceArtifact -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#DeviceArtifact">
+        <rdfs:subClassOf rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Hardware_Equipment"/>
+        <rdfs:comment xml:lang="en">A hardware device used in an interactive system or study, such as an input or output device associated with a software artifact.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/chi2025#DiaryStudy -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#DiaryStudy">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#QualitativeStudy"/>
+        <rdfs:comment xml:lang="en">A qualitative study in which participants keep diaries or logs of their experiences or behaviors over time.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/chi2025#FieldStudy -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#FieldStudy">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#Study"/>
+        <rdfs:comment xml:lang="en">A study conducted in real-world settings, observing participants using systems or interventions in their natural context.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/chi2025#FocusGroupDiscussion -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#FocusGroupDiscussion">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#QualitativeStudy"/>
+        <rdfs:comment xml:lang="en">A qualitative study method in which a group of participants discuss topics or designs together under facilitation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/chi2025#FormativeInterview -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#FormativeInterview">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#InterviewStudy"/>
+        <rdfs:comment xml:lang="en">An interview-based study conducted primarily to inform or shape the design, requirements, or research questions of subsequent work.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/chi2025#GoalSpecification -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#GoalSpecification">
+        <rdfs:subClassOf rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Goal"/>
+        <rdfs:comment xml:lang="en">A specification of a user goal that an interactive system or study aims to satisfy or support.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/chi2025#InputDeviceArtifact -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#InputDeviceArtifact">
+        <rdfs:subClassOf rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Input_Equipment"/>
+        <rdfs:comment xml:lang="en">A hardware device used primarily for user input in an interactive system, such as keyboard, touch, or sensors.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/chi2025#Instrument -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#Instrument">
+        <rdfs:comment xml:lang="en">A data collection instrument used in a study, such as a logging setup, questionnaire, or sensor-based apparatus.</rdfs:comment>
+    </owl:Class>
+    
+    <!-- ============================
+        Instrument Subclasses
+    =============================== -->
+
+    <!-- Sensor Instruments -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#EyeTracker">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#SensorInstrument"/>
+        <rdfs:label>Eye Tracker</rdfs:label>
+        <rdfs:comment xml:lang="en">A sensor-based instrument that measures users&apos; gaze or eye movements during interaction or experimental tasks.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/chi2025#WearableSensor">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#SensorInstrument"/>
+        <rdfs:label>Wearable Sensor</rdfs:label>
+        <rdfs:comment xml:lang="en">A sensor instrument worn on the body to capture physiological or behavioral signals relevant to a study.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/chi2025#SmartwatchSensor">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#SensorInstrument"/>
+        <rdfs:label>Smartwatch Sensor</rdfs:label>
+        <rdfs:comment xml:lang="en">A wearable sensor embedded in a smartwatch that collects usage, activity, or physiological data in a study.</rdfs:comment>
+    </owl:Class>
+
+
+    <!-- http://example.org/chi2025#IntentionSpecification -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#IntentionSpecification">
+        <rdfs:subClassOf rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Intention"/>
+        <rdfs:comment xml:lang="en">A specification of a user intention or desired behavior that an interactive system or intervention is designed to address.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/chi2025#InterfaceArtifact -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#InterfaceArtifact">
+        <rdfs:subClassOf rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Interface"/>
+        <rdfs:comment xml:lang="en">A user interface component or configuration that mediates interaction between a user and a software artifact.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/chi2025#InterviewStudy -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#InterviewStudy">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#QualitativeStudy"/>
+        <rdfs:comment xml:lang="en">A qualitative study that collects data primarily through structured, semi-structured, or unstructured interviews with participants.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/chi2025#LoggingInstrumentation -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#LoggingInstrumentation">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#Instrument"/>
+        <rdfs:comment xml:lang="en">An instrument that records interaction traces or usage logs of a system, typically in the background.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/chi2025#Measure -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#Measure">
+        <rdfs:comment xml:lang="en">A variable or quantity assessed in a study to capture outcomes, behaviors, or experiences of interest.</rdfs:comment>
+    </owl:Class>
+    
+
+    <!-- ============================
+        Measure Subclasses
+    =============================== -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#ReactionTimeMeasure">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#PerformanceMeasure"/>
+        <rdfs:label>Reaction Time Measure</rdfs:label>
+        <rdfs:comment xml:lang="en">A performance measure that captures the time users take to respond to stimuli or complete specific actions.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/chi2025#CompletionTimeMeasure">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#PerformanceMeasure"/>
+        <rdfs:label>Completion Time Measure</rdfs:label>
+        <rdfs:comment xml:lang="en">A performance measure that records how long it takes users to complete tasks or workflows.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/chi2025#ErrorRateMeasure">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#PerformanceMeasure"/>
+        <rdfs:label>Error Rate Measure</rdfs:label>
+        <rdfs:comment xml:lang="en">A performance measure that quantifies how frequently users make errors while performing tasks.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/chi2025#AccuracyMeasure">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#PerformanceMeasure"/>
+        <rdfs:label>Accuracy Measure</rdfs:label>
+        <rdfs:comment xml:lang="en">A performance measure that assesses how correct or precise users&apos; responses or task outcomes are.</rdfs:comment>
+    </owl:Class>
+
+
+    <!-- Subjective -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#LikertScaleMeasure">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#SubjectiveMeasure"/>
+        <rdfs:label>Likert Scale Measure</rdfs:label>
+        <rdfs:comment xml:lang="en">A subjective measure based on Likert-scale responses, typically capturing attitudes, agreement, or perceived experience.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/chi2025#UsabilityRatingMeasure">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#SubjectiveMeasure"/>
+        <rdfs:label>Usability Rating Measure</rdfs:label>
+        <rdfs:comment xml:lang="en">A subjective measure that captures users&apos; ratings of a system&apos;s usability or user experience quality.</rdfs:comment>
+    </owl:Class>
+
+
+    <!-- Physiological -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#HeartRateMeasure">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#PhysiologicalMeasure"/>
+        <rdfs:label>Heart Rate Measure</rdfs:label>
+        <rdfs:comment xml:lang="en">A physiological measure that records heart rate or related cardiac signals as part of a study.</rdfs:comment>
+    </owl:Class>
+
+
+    <!-- http://example.org/chi2025#OutputDeviceArtifact -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#OutputDeviceArtifact">
+        <rdfs:subClassOf rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Output_Equipment"/>
+        <rdfs:comment xml:lang="en">A hardware device used primarily for presenting output from an interactive system, such as screens or speakers.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/chi2025#Paper -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#Paper">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Article"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/chi2025#hasAuthor"/>
+                <owl:someValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>CHI Paper</rdfs:label>
+        <rdfs:comment xml:lang="en">A CHI research paper modeled as a bibliographic article that has one or more human authors and may report studies, measures, and results.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/chi2025#ParticipationPattern -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#ParticipationPattern">
+        <rdfs:subClassOf rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Participation"/>
+        <rdfs:comment xml:lang="en">A pattern describing how users participate in a system or study, such as in-the-wild usage or lab sessions.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/chi2025#PerformanceMeasure -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#PerformanceMeasure">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#Measure"/>
+        <rdfs:comment xml:lang="en">A measure that captures how well users perform tasks, often in terms of speed, accuracy, or efficiency.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/chi2025#PhysiologicalMeasure -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#PhysiologicalMeasure">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#Measure"/>
+        <rdfs:comment xml:lang="en">A measure based on physiological signals such as heart rate, skin conductance, or other bodily responses.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/chi2025#QualitativeResult -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#QualitativeResult">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#Result"/>
+        <rdfs:comment xml:lang="en">A result derived from qualitative analysis, such as themes, categories, or narratives about user experiences.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/chi2025#QualitativeStudy -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#QualitativeStudy">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#Study"/>
+        <owl:disjointWith rdf:resource="http://example.org/chi2025#QuantitativeStudy"/>
+        <rdfs:comment xml:lang="en">A study that primarily uses qualitative methods, such as interviews, observations, or diary entries, to understand user experiences.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/chi2025#QuantitativeStudy -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#QuantitativeStudy">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#Study"/>
+        <rdfs:comment xml:lang="en">A study that primarily uses quantitative methods, such as experiments or surveys, and statistical analysis of numerical data.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/chi2025#Questionnaire -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#Questionnaire">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#Instrument"/>
+        <rdfs:comment xml:lang="en">An instrument that collects structured responses from participants through questions, often using scales or multiple-choice items.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/chi2025#Result -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#Result">
+        <rdfs:comment xml:lang="en">An outcome produced by a study, such as findings, effect estimates, or qualitative insights.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/chi2025#SensorInstrument -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#SensorInstrument">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#Instrument"/>
+        <rdfs:comment xml:lang="en">An instrument that relies on sensors to capture signals or data from users or the environment.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/chi2025#Session -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#Session">
+        <rdfs:comment xml:lang="en">A unit of time-bounded participation in a study or interaction with a system, often associated with specific tasks or conditions.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/chi2025#SoftwareArtifact -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#SoftwareArtifact">
+        <rdfs:subClassOf rdf:resource="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Interactive_Computer_System"/>
+        <rdfs:comment xml:lang="en">An interactive software system or prototype that users interact with and that may be evaluated in CHI studies.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/chi2025#StatisticalResult -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#StatisticalResult">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#Result"/>
+        <rdfs:comment xml:lang="en">A result expressed through statistical analysis, such as effect sizes, significance tests, or model estimates.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/chi2025#Study -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#Study">
+        <rdfs:comment xml:lang="en">A research study reported in a CHI paper, which may involve users, interventions, measures, and results.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/chi2025#SubjectiveMeasure -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#SubjectiveMeasure">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#Measure"/>
+        <rdfs:comment xml:lang="en">A measure based on participants&apos; self-reported perceptions, feelings, or judgments rather than purely objective performance or signals.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/chi2025#SystemUsageInterview -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#SystemUsageInterview">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#InterviewStudy"/>
+        <rdfs:comment xml:lang="en">An interview-based study that focuses on how people use a particular system in their real or intended contexts.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/chi2025#ThinkAloudStudy -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#ThinkAloudStudy">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#QualitativeStudy"/>
+        <rdfs:comment xml:lang="en">A qualitative study in which participants verbalize their thoughts while interacting with a system or performing tasks.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/chi2025#TopicConcept -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#TopicConcept">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">A topical concept that represents a CHI research theme or topic used to annotate papers and studies.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/chi2025#Track -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#Track">
+        <rdfs:comment xml:lang="en">A track or category within the CHI conference to which papers can be assigned.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/chi2025#UsageScenarioInterview -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#UsageScenarioInterview">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#InterviewStudy"/>
+        <rdfs:comment xml:lang="en">An interview study that explores possible or actual scenarios of using a system, focusing on context and activities.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/chi2025#UserStudy -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#UserStudy">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#Study"/>
+        <rdfs:comment xml:lang="en">A study in which people interact with a system, prototype, or concept, and their behaviors or experiences are observed or measured.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/chi2025#WizardOfOzStudy -->
+
+    <owl:Class rdf:about="http://example.org/chi2025#WizardOfOzStudy">
+        <rdfs:subClassOf rdf:resource="http://example.org/chi2025#Study"/>
+        <rdfs:comment xml:lang="en">A study in which a human secretly performs functions of a system component, allowing evaluation of interactions before full automation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Article -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Article">
+        <rdfs:comment xml:lang="en">A bibliographic article, such as a scholarly publication, reused here as the superclass of CHI papers.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Organization -->
+
+    <owl:Class rdf:about="http://schema.org/Organization">
+        <rdfs:comment xml:lang="en">An organization as defined in schema.org, representing institutions or groups such as companies or universities.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+        <rdfs:comment xml:lang="en">A SKOS concept used to represent ideas or topics within a concept scheme.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#Address -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Address">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2006/vcard/ns#country-name"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Postal Address</rdfs:label>
+        <rdfs:comment xml:lang="en">A postal address from the vCard ontology, used to locate organizations or other entities.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/org#Organization -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/org#Organization">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2006/vcard/ns#hasAddress"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2006/vcard/ns#Address"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Organization</rdfs:label>
+        <rdfs:comment xml:lang="en">An organization from the W3C ORG ontology, representing institutions or groups that can have postal addresses.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <rdfs:label>Person</rdfs:label>
+        <rdfs:comment xml:lang="en">A person as defined in FOAF, used here to represent authors and other individuals in CHI studies.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Hardware_Equipment -->
+
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Hardware_Equipment">
+        <rdfs:comment xml:lang="en">A class from HCIO representing hardware equipment that may be involved in human-computer interaction.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Input_Equipment -->
+
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Input_Equipment">
+        <rdfs:comment xml:lang="en">A class from HCIO representing equipment used for user input in interactive computer systems.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Interactive_Computer_System -->
+
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Interactive_Computer_System">
+        <rdfs:comment xml:lang="en">A class from HCIO representing an interactive computer system that supports communication with users.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Output_Equipment -->
+
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#Output_Equipment">
+        <rdfs:comment xml:lang="en">A class from HCIO representing equipment used to present output from an interactive system to users.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Goal -->
+
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Goal">
+        <rdfs:comment xml:lang="en">A class from HCIO representing goals that users aim to achieve through interaction with systems.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Intention -->
+
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Intention">
+        <rdfs:comment xml:lang="en">A class from HCIO representing users&apos; intentions when engaging in human-computer interaction.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Interface -->
+
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Interface">
+        <rdfs:comment xml:lang="en">A class from HCIO representing user interfaces through which people interact with interactive computer systems.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Participation -->
+
+    <owl:Class rdf:about="urn:absolute:dev.nemo.inf.ufes.br/hcion/HCIO.owl#User_Participation">
+        <rdfs:comment xml:lang="en">A class from HCIO representing the participation of users in interaction or study contexts.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.org/chi2025#Affiliation"/>
+            <rdf:Description rdf:about="http://example.org/chi2025#Author"/>
+            <rdf:Description rdf:about="http://example.org/chi2025#DeviceArtifact"/>
+            <rdf:Description rdf:about="http://example.org/chi2025#GoalSpecification"/>
+            <rdf:Description rdf:about="http://example.org/chi2025#Instrument"/>
+            <rdf:Description rdf:about="http://example.org/chi2025#IntentionSpecification"/>
+            <rdf:Description rdf:about="http://example.org/chi2025#Measure"/>
+            <rdf:Description rdf:about="http://example.org/chi2025#Paper"/>
+            <rdf:Description rdf:about="http://example.org/chi2025#ParticipationPattern"/>
+            <rdf:Description rdf:about="http://example.org/chi2025#Result"/>
+            <rdf:Description rdf:about="http://example.org/chi2025#Session"/>
+            <rdf:Description rdf:about="http://example.org/chi2025#Study"/>
+            <rdf:Description rdf:about="http://example.org/chi2025#TopicConcept"/>
+            <rdf:Description rdf:about="http://example.org/chi2025#Track"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
